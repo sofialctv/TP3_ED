@@ -19,9 +19,10 @@ typedef struct Radiologist Radiologist; /* Estrutura relativa aos Radiologistas 
 typedef struct list_node ListNode;    /* Auxiliar para implementação de ListOfPatients*/
 typedef struct Queue_Node QueueNode; /* Auxiliar para implementação de QueueExams*/
 
-typedef struct log_event LogEvent;  /* Definição da estrutura LogEvent, relativa ao evento a ser registrado */
+typedef struct LogEvent LogEvent;  /* Definição da estrutura LogEvent, relativa ao evento a ser registrado */
 typedef struct log Log;             /* Definição da estrutura Log, que contém os principais eventos */
 
+typedef struct PatologyWaitTime PatologyWaitTime;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*                                                # PACIENTES #                                                      */
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -115,8 +116,11 @@ void radio_print(ListRadiologist *radio); /* Função que printa os radiologista
 
 int total_path(QueueReport *r, const char *p); /* Função que calcula total de exames relacionados a essa patologia */
 int tempWait_path(QueueReport *r, const char *p); /* Função que calcula total de exames relacionados a essa patologia */
-int examsBeyondTimeLimit(QueueReport *report, int timeLimit); /*Função que calcula a soma dos tempos de espera dos exames de uma patologia específica */
+
 float averageReportTime(QueueReport *report); /* Função que calcula o tempo médio do relatório */
+void averageReportTimePerPatology(QueueReport *report, PatologyWaitTime *patologyWaitTimes, int numPatologies);
+int examsBeyondTimeLimit(QueueReport *report, int timeLimit); /*Função que calcula a soma dos tempos de espera dos exames de uma patologia específica */
+void printMetrics(QueueReport *report);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*                                               # LOGGING #                                                         */
@@ -127,7 +131,7 @@ void log_event(Log *log, const char *message); /* Função para registro de novo
 void save_log_to_file(const Log *log, const char *filename); /* Função que salva o log (registro de evento) no arquivo .txt */
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*                                        # FUNÇÃO PARA LIMPAR MEMORIA #                                             */
+/*                               # FUNÇÃO PARA LIMPAR MEMORIA & AUXILIARES #                                         */
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void listpatient_free(ListPatient *p); /* Função que limpa a lista de pacientes */
@@ -135,5 +139,7 @@ void listmach_free(ListMachines *mach); /* Função que limpa a lista de máquin
 void listradiologist_free(ListRadiologist *radio); /* Função que limpa a lista de radiologistas */
 void qexam_free(QueueExams *exam); /* Função que limpa a fila de exames */
 void qreport_free(QueueReport *report); /* Função que limpa a fila de laudos */
+
+void sleepMicroseconds(unsigned long microseconds);
 
 #endif

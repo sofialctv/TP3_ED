@@ -17,30 +17,6 @@ int main() {
   char filename[10];
   patient *patient;
 
-  /* Variáveis para métricas */
-  int time_report_med;
-  float avgTime;
-
-  int cont_Normal = 0;
-  int cont_NormalTemp = 0;
-  int calc_normal = 0;
-
-  int cont_Pneumonia = 0;
-  int cont_PneumoniaTemp = 0;
-  int calc_Pneumonia = 0;
-
-  int cont_Bronquite = 0;
-  int cont_BronquiteTemp = 0;
-  int calc_Bronquite = 0;
-
-  int cont_Fratura = 0;
-  int cont_FraturaTemp = 0;
-  int calc_Fratura = 0;
-
-  int cont_Apendicite = 0;
-  int cont_ApendiciteTemp = 0;
-  int calc_Apendicite = 0;
-
   /* Acesso ao arquivo */
   printf("Digite o nome do arquivo: ");
   scanf("%s", filename);
@@ -92,59 +68,11 @@ int main() {
     /* Tempo que o paciente saí da QueueReport (fila de laudo) e é alocado para o Radiologista */
     insert_radio(Radio, report, time); 
     remove_radio(Radio,time);
-
-    /* Cálculo das métricas */
-    avgTime = averageReportTime(report);
-
-    cont_Normal = total_path(report, "Saúde Normal");
-    cont_NormalTemp = tempWait_path(report, "Saúde Normal");
-
-    calc_normal = (cont_Normal != 0) ? (cont_NormalTemp / cont_Normal) : 0;
-   
-
-    cont_Bronquite = total_path(report, "Bronquite");
-    cont_BronquiteTemp = tempWait_path(report, "Bronquite");
-
-    calc_Bronquite = (cont_Bronquite != 0) ? (cont_BronquiteTemp / cont_Bronquite) : 0;
-
-    cont_Pneumonia = total_path(report, "Pneumonia");
-    cont_PneumoniaTemp = tempWait_path(report, "Pneumonia");
-
-    calc_Pneumonia = (cont_Pneumonia != 0) ? (cont_PneumoniaTemp / cont_Pneumonia) : 0;
-
-    cont_Fratura = total_path(report, "Fratura de Fêmur");
-    cont_FraturaTemp = tempWait_path(report, "Fratura de Fêmur");
-
-    calc_Fratura = (cont_Fratura != 0) ? (cont_FraturaTemp / cont_Fratura) : 0;
-
-    cont_Apendicite = total_path(report, "Apendicite");
-    cont_ApendiciteTemp = tempWait_path(report, "Apendicite");
-
-    calc_Apendicite = (cont_Apendicite != 0) ? (cont_ApendiciteTemp / cont_Apendicite) : 0;
-
-    time_report_med = examsBeyondTimeLimit(report, 7200);
-    
-
-    /* RELATÓRIO DE MÉTRICAS */
     if((relatorio % 10) == 0){
-      printf("\nRELATÓRIO DE MÉTRICAS - Unidade de Tempo: %d\n", time);
-
-      printf("TML (Tempo médio de laudo): %.0f\n", avgTime);
-
-      printf("TMP (Tempo médio de laudo por patologia (Saúde Normal)): %d\n", calc_normal);
-
-      printf("TMP (Tempo médio de laudo por patologia (Bronquite)): %d\n", calc_Bronquite);
-
-      printf("TMP (Tempo médio de laudo por patologia (Pneumonia)): %d\n", calc_Pneumonia);
-
-      printf("TMP (Tempo médio de laudo por patologia (Fratura de Fêmur)): %d\n", calc_Fratura);
-
-      printf("TMP (Tempo médio de laudo por patologia (Apendicite)): %d\n", calc_Apendicite);
-
-      printf("QEL (Quantidade de exames realizados após o limite de tempo estabelecido): %d\n\n", time_report_med);
+      printMetrics(report);
+      sleepMicroseconds(300000);
     }
-    
-    sleep(1);
+      
     relatorio = relatorio + 1;
   }
 

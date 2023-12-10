@@ -95,6 +95,13 @@ struct LogEvent {
   time_t timestamp;
 };
 
+// Estrutura que armazena informações sobre a patologia e o tempo de espera para laudo
+struct PatologyWaitTime {
+    char patology[20];
+    int totalWaitTime;
+    int numberOfExams;
+};
+
 struct Log {
   LogEvent events[2000];
   int count;
@@ -569,42 +576,7 @@ void radio_print(ListRadiologist *radio){
 /*                                        # FUNÇÃO PARA METRICAS #                                                   */
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-int total_path(QueueReport *r, const char *p){
-  int cont = 0;
-  for (ExamRecord *record = r->front; record != NULL; record = record->next){
-    
-    int result = strcmp(record->path->condition, p);
-    if(result == 0){
-      cont++;
-    }
-  }
-  return cont;
-}
-
-int tempWait_path(QueueReport *r, const char *p){
-  int cont = 0;
-  for (ExamRecord *record = r->front; record != NULL; record = record->next){
-    
-    int result = strcmp(record->path->condition, p);
-    if(result == 0){
-      cont = cont + record->finishTime;
-    }
-  }
-  return cont;
-}
-
-int examsBeyondTimeLimit(QueueReport *report, int timeLimit) {
-    int count = 0;
-
-    for (ExamRecord *record = report->front; record != NULL; record = record->next) {
-        if (record->finishTime > timeLimit) {
-            count++;
-        }
-    }
-
-    return count;
-}
-
+// Função que calcula o tempo médio de laudo
 float averageReportTime(QueueReport *report) {
     if (QueueReportEmpty(report)) {
         return 0.0;
@@ -621,59 +593,155 @@ float averageReportTime(QueueReport *report) {
     return (float)totalTime / totalReports;
 }
 
+// Função que calcula o tempo médio de laudo por patologia
+void averageReportTimePerPatology(QueueReport *report, PatologyWaitTime *patologyWaitTimes, int numPatologies) {
+    if (QueueReportEmpty(report)) {
+        return;
+    }
+
+    for (ExamRecord *record = report->front; record != NULL; record = record->next) {
+        for (int i = 0; i < numPatologies; i++) {
+            if (strcmp(record->path->condition, patologyWaitTimes[i].patology) == 0) {
+                patologyWaitTimes[i].totalWaitTime += record->finishTime;
+                patologyWaitTimes[i].numberOfExams++;
+            }
+        }
+    }
+}
+
+// Função que calcula a quantidade de exames realizados após o limite de tempo estabelecido
+int examsBeyondTimeLimit(QueueReport *report, int timeLimit) {
+    int count = 0;
+
+    for (ExamRecord *record = report->front; record != NULL; record = record->next) {
+        if (record->finishTime > timeLimit) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+// Função que imprime as métricas solicitadas
+void printMetrics(QueueReport *report) {
+    printf("Tempo médio de laudo: %.2f\n", averageReportTime(report));
+
+    // Lista de patologias a serem consideradas
+    const char *patologies[] = {"Saúde Normal", "Bronquite", "Pneumonia", "Fratura de Fêmur", "Apendicite"};
+    int numPatologies = sizeof(patologies) / sizeof(patologies[0]);
+
+    // Inicializar a estrutura para armazenar informações sobre cada patologia
+    PatologyWaitTime patologyWaitTimes[numPatologies];
+    for (int i = 0; i < numPatologies; i++) {
+        strcpy(patologyWaitTimes[i].patology, patologies[i]);
+        patologyWaitTimes[i].totalWaitTime = 0;
+        patologyWaitTimes[i].numberOfExams = 0;
+    }
+
+    // Chamar função para calcular o tempo médio de laudo por patologia
+    averageReportTimePerPatology(report, patologyWaitTimes, numPatologies);
+
+    // Restante da função para imprimir as métricas por patologia
+    for (int i = 0; i < numPatologies; i++) {
+        if (patologyWaitTimes[i].numberOfExams > 0) {
+            float averageTime = (float)patologyWaitTimes[i].totalWaitTime / patologyWaitTimes[i].numberOfExams;
+            printf("Tempo médio de laudo para %s: %.2f\n", patologyWaitTimes[i].patology, averageTime);
+        }
+    }
+
+    int timeLimit = 7200;
+    int examsBeyondLimit = examsBeyondTimeLimit(report, timeLimit);
+
+    printf("Quantidade de exames realizados após o limite de tempo estabelecido (%d | Tempo limite): %d\n", timeLimit, examsBeyondLimit);
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*                                        # FUNÇÃO PARA LIMPAR MEMORIA #                                             */
+/*                               # FUNÇÃO PARA LIMPAR MEMORIA & AUXILIARES #                                         */
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void listpatient_free(ListPatient *p){
-   ListNode *node_pat = p->first;
-   ListNode *temp;
-   while (node_pat != NULL){
-      temp = node_pat->next;
-      free(node_pat);
-      node_pat = temp;
-   }
-   free(p); 
+/* Função para liberar a memória alocada para a lista de pacientes */
+void listpatient_free(ListPatient *p) {
+    ListNode *node = p->first;
+    while (node != NULL) {
+        ListNode *temp = node->next;
+        free(node->patients);
+        free(node);
+        node = temp;
+    }
+    free(p);
 }
 
-void listmach_free(ListMachines *mach){
-   Machines *node_mach = mach->first;
-   Machines *temp;
-   while (node_mach != NULL){
-      temp = node_mach->next;
-      free(node_mach);
-      node_mach = temp;
-   }
-   free(mach); 
+/* Função para liberar a memória alocada para a lista de máquinas */
+void listmach_free(ListMachines *m) {
+    Machines *node = m->first;
+    while (node != NULL) {
+        Machines *temp = node->next;
+        free(node);
+        node = temp;
+    }
+    free(m);
 }
 
-void listradiologist_free(ListRadiologist *radio){
-   Radiologist *node_radio = radio->first;
-   Radiologist *temp;
-   while (node_radio != NULL){
-      temp = node_radio->next;
-      free(node_radio);
-      node_radio = temp;
-   }
-   free(radio); 
+/* Função para liberar a memória alocada para a lista de radiologistas */
+void listradiologist_free(ListRadiologist *r) {
+    Radiologist *node = r->first;
+    while (node != NULL) {
+        Radiologist *temp = node->next;
+        free(node);
+        node = temp;
+    }
+    free(r);
 }
 
-void qexam_free(QueueExams *exam){
-   QueueNode *node_exam = exam->front;
-   while (node_exam != NULL){
-      QueueNode *temp = node_exam->next;
-      free(node_exam);           
-      node_exam = temp;              
-   }
-   free(exam); 
+/* Função para liberar a memória alocada para a fila de exames */
+void qexam_free(QueueExams *q) {
+    QueueNode *node = q->front;
+    while (node != NULL) {
+        QueueNode *temp = node->next;
+        free(node);
+        node = temp;
+    }
+    free(q);
 }
 
-void qreport_free(QueueReport *report){
-   ExamRecord *record = report->front;
-   while (record != NULL){
-      ExamRecord *temp = record->next;
-      free(record);
-      record = temp;
-   }
-   free(report);
+/* Função para liberar a memória alocada para um registro de exame */
+void examRecord_free(ExamRecord *record) {
+    free(record->path);
+    free(record);
 }
+
+/* Função para liberar a memória alocada para a fila de laudos */
+void qreport_free(QueueReport *report) {
+    ExamRecord *record = report->front;
+    while (record != NULL) {
+        ExamRecord *temp = record->next;
+        examRecord_free(record);
+        record = temp;
+    }
+    free(report);
+}
+
+
+// Função para pausar a execução por um número de microssegundos
+void sleepMicroseconds(unsigned long microseconds) {
+    struct timespec req;
+    req.tv_sec = microseconds / 1000000;
+    req.tv_nsec = (microseconds % 1000000) * 1000;
+    nanosleep(&req, NULL);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
