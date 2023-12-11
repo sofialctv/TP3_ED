@@ -26,6 +26,7 @@ int main() {
   QueueReport *report = QueueReport_create();
   ListMachines *Machine = ListMachines_create();
   ListRadiologist *Radio = Radiologist_create();
+  Log *log = create_log();
 
   /* Lendo o arquivo como o nome dado anteriormente */
   FILE *arquivo = fopen(filename, "r");
@@ -57,16 +58,20 @@ int main() {
         
         /* Fila de pacientes */
         QueueEnqueue(exams, nextID);
+
+        msg_newPatient(log, time, newPatient);
+
         nextID++;
     }
 
     /* Funçoes de exame até radiologia */
     insert_machines(Machine, exams, time);
-    Exam_Record(report, Machine, time);
+    Exam_Record(report, Machine, time, log);
 
     /* Tempo que o paciente saí da QueueReport (fila de laudo) e é alocado para o Radiologista */
     insert_radio(Radio, report, time); 
-    remove_radio(Radio,time);
+    remove_radio(Radio,time, log);
+    
     if((relatorio % 10) == 0){
       printMetrics(report);
       sleepMicroseconds(300000);
@@ -75,6 +80,8 @@ int main() {
     relatorio = relatorio + 1;
   }
 
+  save_log_to_file(log, "log.txt");
+  
   /*Limpando memória das lista e das filas implementadas */
   listpatient_free(list_patient);
   listmach_free(Machine);

@@ -90,11 +90,6 @@ struct Radiologist {
   Radiologist *prev;
 };
 
-struct LogEvent {
-  char message[256];
-  time_t timestamp;
-};
-
 // Estrutura que armazena informações sobre a patologia e o tempo de espera para laudo
 struct PatologyWaitTime {
     char patology[20];
@@ -102,8 +97,13 @@ struct PatologyWaitTime {
     int numberOfExams;
 };
 
-struct Log {
-  LogEvent events[2000];
+struct LogEvent {
+  char message[256];
+  time_t timestamp;
+};
+
+struct log {
+  LogEvent events[30000];
   int count;
 };
 
@@ -366,7 +366,7 @@ QueueReport *QueueReport_create() {
 }
 
 /* Função que verifica se o paciente terminou o exame e transferi para a fila de laudo */
-void Exam_Record(QueueReport *report, ListMachines *m, int time){
+void Exam_Record(QueueReport *report, ListMachines *m, int time, Log *log){
 
   int check = machine_check(m, time);
   while ((check) != -1) {
@@ -386,6 +386,7 @@ void Exam_Record(QueueReport *report, ListMachines *m, int time){
       report->rear->next = r;
       report->rear = r;
     }
+    msg_record(r, log);
     check = machine_check(m, time);
   }
 }
@@ -511,10 +512,11 @@ void insert_radio(ListRadiologist *r, QueueReport *patient, int time) {
 }
 
 /* Paciente termina sua consulta com o radiologista */
-void remove_radio(ListRadiologist *r,int time){
+void remove_radio(ListRadiologist *r,int time, Log *l){
   for(Radiologist *radio = r->first; radio != NULL; radio = radio->next){
 
     if(time == (radio->durationRad + radio->time)){
+      msg_radio(l, radio);
       radio->durationRad = 0;
       radio->occupation = 0;
       radio->patientID = 0;
@@ -730,18 +732,71 @@ void sleepMicroseconds(unsigned long microseconds) {
     nanosleep(&req, NULL);
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*                               # FUNÇÃO PARA LIMPAR MEMORIA & AUXILIARES #                                         */
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+Log* create_log() {
+    Log *l = (Log *)malloc(sizeof(Log));
+    l->count = 0;
+    return l;
+}
 
+// Função para registrar eventos no log
+void log_event(Log *log, const char *message) {
+    if (log->count < 1000) {
+        strncpy(log->events[log->count].message, message, sizeof(log->events[log->count].message));
+        log->events[log->count].timestamp = time(NULL);
+        log->count++;
+    } else 
+    {
+        printf("Erro: Log está cheio. Não é possível adicionar mais eventos.\n");
+    }
+}
 
+// Função para salvar o log em um arquivo
+void save_log_to_file(const Log *log, const char *filename) {
+    FILE *file = fopen(filename, "w");
+    if (file != NULL) 
+    {
 
+        for (int i = 0; i < log->count; i++) 
+        {
+            fprintf(file, "# TEMPO %ldt\n", log->events[i].timestamp);
+            fprintf(file, "- %s\n", log->events[i].message);
+        }
+        fclose(file);
 
+    } else 
+    {
+        printf("Erro: Não foi possível abrir o arquivo %s para escrita.\n", filename);
+    }
+}
 
+void msg_newPatient(Log *log, int time, patient *p) {
+    // Formata a mensagem usando snprintf
+    char entry[255];  // ajuste o tamanho conforme necessário
+    snprintf(entry, sizeof(entry), "# TEMPO %dt\n- Entrada de novo paciente no hospital. [ID: %d   Nome: %s    CPF: %s    Idade: %d]\n",
+             time, p->id, p->name, p->cpf, p->age);
 
+    // Adiciona a mensagem ao log
+    log_event(log, entry);
+}
 
+void msg_record(ExamRecord *r, Log *log){
 
+  char entry[255];
+  snprintf(entry, sizeof(entry), "- Exame do paciente de ID %d realizado na máquina N. [Finalização do exame: %dt    Condição: %s    Qtd. de Máquinas Disponíves: 5]\n", 
+          r->id, r->finishTime, r->path->condition);
+  log_event(log,entry);
 
+}
 
-
-
-
-
+void msg_radio(Log *log, Radiologist *radio){
+  
+  char entry[255];
+  snprintf(entry, sizeof(entry), "- Laudo de Exame do paciente de ID %d finalizado pelo radiologista N. [Duração do laudo: %dt]\n", 
+          radio->patientID, radio->durationRad);
+  log_event(log,entry);
+  
+}

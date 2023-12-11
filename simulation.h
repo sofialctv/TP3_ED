@@ -77,7 +77,7 @@ QueueReport *QueueReport_create(); /* Função que cria uma fila de laudos vazia
 
 int QueueReportEmpty(QueueReport *q); /* Função que verifica se a fila de laudos está vazia */
 
-void Exam_Record(QueueReport *report, ListMachines *m, int time); /* Função que verifica se o paciente terminou o exame e transferi para a fila de laudo */
+void Exam_Record(QueueReport *report, ListMachines *m, int time, Log *log); /* Função que verifica se o paciente terminou o exame e transferi para a fila de laudo */
 
 Pathologie *Assessing_Pathologies(); /* Função que avalia/computa as patologias, com suas respectivas probabilidades de ocorrência */
 
@@ -93,7 +93,7 @@ void initializeRadiologist(int qtd, ListRadiologist *r); /* Função que inicial
 
 void insert_radio(ListRadiologist *r, QueueReport *patient, int time); /* Alocação do primeiro exame de QueueReport para radiologista livre */
 
-void remove_radio(ListRadiologist *r,int time); /* Remoção do paciente (conclusao do laudo) */
+void remove_radio(ListRadiologist *r,int time, Log *l); /* Remoção do paciente (conclusao do laudo) */
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -141,5 +141,11 @@ void qexam_free(QueueExams *exam); /* Função que limpa a fila de exames */
 void qreport_free(QueueReport *report); /* Função que limpa a fila de laudos */
 
 void sleepMicroseconds(unsigned long microseconds);
+
+
+void save_log_to_file(const Log *log, const char *filename);
+void log_event(Log *log, const char *message);
+void msg_newPatient(Log *log, int time, patient *p);
+void msg_record(ExamRecord *r, Log *log);
 
 #endif
