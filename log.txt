@@ -1,0 +1,2677 @@
+[TEMPO 1t : event] Entrada de novo paciente no hospital. [ID: 1000   Nome: Carolina    CPF: 781.184.422-80    Idade: 31]
+
+
+
+
+
+
+
+[TEMPO 8t : event] Entrada de novo paciente no hospital. [ID: 1001   Nome: Danilo    CPF: 514.635.474-25    Idade: 57]
+
+[TEMPO 9t : event] Exame do paciente de ID 1000 realizado na máquina [Finalização do exame às 9t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+
+
+
+
+
+
+[TEMPO 15t : event] Exame do paciente de ID 1001 realizado na máquina [Finalização do exame às 15t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 5]
+
+
+
+
+[TEMPO 19t : event] Entrada de novo paciente no hospital. [ID: 1002   Nome: Maria Eduarda    CPF: 614.757.731-99    Idade: 68]
+
+
+[TEMPO 21t : event] Entrada de novo paciente no hospital. [ID: 1003   Nome: Lorena    CPF: 861.990.942-73    Idade: 46]
+
+[TEMPO 13t : event] Laudo de Exame do paciente de ID 1000 finalizado pelo radiologista [Duração do laudo: 13t]
+
+
+
+
+
+[TEMPO 26t : event] Exame do paciente de ID 1002 realizado na máquina [Finalização do exame às 26t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 4]
+
+
+[TEMPO 28t : event] Exame do paciente de ID 1003 realizado na máquina [Finalização do exame às 28t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 5]
+
+
+
+
+[TEMPO 32t : event] Entrada de novo paciente no hospital. [ID: 1004   Nome: Maria Alice    CPF: 400.482.654-80    Idade: 78]
+
+
+
+
+
+
+
+
+[TEMPO 14t : event] Laudo de Exame do paciente de ID 1002 finalizado pelo radiologista [Duração do laudo: 14t]
+
+[TEMPO 25t : event] Laudo de Exame do paciente de ID 1001 finalizado pelo radiologista [Duração do laudo: 25t]
+
+
+[TEMPO 41t : event] Entrada de novo paciente no hospital. [ID: 1005   Nome: Gustavo    CPF: 201.905.424-58    Idade: 31]
+[TEMPO 41t : event] Exame do paciente de ID 1004 realizado na máquina [Finalização do exame às 41t    Condição: Fratura de Fêmur    Qtd. de Máquinas Disponíveis: 4]
+
+
+
+[TEMPO 44t : event] Entrada de novo paciente no hospital. [ID: 1006   Nome: Ian    CPF: 395.641.224-68    Idade: 35]
+[TEMPO 16t : event] Laudo de Exame do paciente de ID 1003 finalizado pelo radiologista [Duração do laudo: 16t]
+
+
+
+
+
+
+
+[TEMPO 50t : event] Exame do paciente de ID 1005 realizado na máquina [Finalização do exame às 50t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 4]
+
+
+[TEMPO 52t : event] Exame do paciente de ID 1006 realizado na máquina [Finalização do exame às 52t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 5]
+
+[TEMPO 12t : event] Laudo de Exame do paciente de ID 1004 finalizado pelo radiologista [Duração do laudo: 12t]
+
+
+
+
+
+[TEMPO 57t : event] Entrada de novo paciente no hospital. [ID: 1007   Nome: Beatriz    CPF: 517.621.989-34    Idade: 31]
+
+
+
+
+
+
+[TEMPO 63t : event] Exame do paciente de ID 1007 realizado na máquina [Finalização do exame às 63t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 5]
+
+[TEMPO 64t : event] Entrada de novo paciente no hospital. [ID: 1008   Nome: Luna    CPF: 910.657.165-94    Idade: 60]
+
+[TEMPO 65t : event] Entrada de novo paciente no hospital. [ID: 1009   Nome: Leandro    CPF: 557.125.292-19    Idade: 60]
+
+[TEMPO 14t : event] Laudo de Exame do paciente de ID 1006 finalizado pelo radiologista [Duração do laudo: 14t]
+
+
+
+
+
+
+[TEMPO 71t : event] Exame do paciente de ID 1008 realizado na máquina [Finalização do exame às 71t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 4]
+
+[TEMPO 72t : event] Exame do paciente de ID 1009 realizado na máquina [Finalização do exame às 72t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Pneumonia: 72.00t
+[metric] Tempo médio de laudo: 72.00
+
+[metric] TML para Pneumonia: 72.00t
+[metric] Tempo médio de laudo: 72.00
+
+[metric] TML para Pneumonia: 72.00t
+[metric] Tempo médio de laudo: 72.00
+
+[TEMPO 25t : event] Laudo de Exame do paciente de ID 1005 finalizado pelo radiologista [Duração do laudo: 25t]
+
+[metric] TML para Pneumonia: 72.00t
+[metric] Tempo médio de laudo: 72.00
+
+
+
+
+[TEMPO 79t : event] Entrada de novo paciente no hospital. [ID: 1010   Nome: Gustavo Henrique    CPF: 989.643.961-98    Idade: 79]
+
+
+
+
+
+[TEMPO 84t : event] Entrada de novo paciente no hospital. [ID: 1011   Nome: Felipe    CPF: 394.229.970-66    Idade: 60]
+[TEMPO 84t : event] Exame do paciente de ID 1010 realizado na máquina [Finalização do exame às 84t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Bronquite: 84.00t
+[metric] Tempo médio de laudo: 84.00
+
+[metric] TML para Bronquite: 84.00t
+[metric] Tempo médio de laudo: 84.00
+
+[metric] TML para Bronquite: 84.00t
+[metric] Tempo médio de laudo: 84.00
+
+[metric] TML para Bronquite: 84.00t
+[metric] Tempo médio de laudo: 84.00
+
+[metric] TML para Bronquite: 84.00t
+[metric] Tempo médio de laudo: 84.00
+
+[metric] TML para Bronquite: 84.00t
+[metric] Tempo médio de laudo: 84.00
+
+[metric] TML para Bronquite: 84.00t
+[metric] Tempo médio de laudo: 84.00
+
+[TEMPO 91t : event] Exame do paciente de ID 1011 realizado na máquina [Finalização do exame às 91t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Saúde Normal: 91.00t
+[metric] TML para Bronquite: 84.00t
+[metric] Tempo médio de laudo: 87.50
+
+[TEMPO 92t : event] Entrada de novo paciente no hospital. [ID: 1012   Nome: Samuel    CPF: 800.589.225-70    Idade: 69]
+[metric] TML para Saúde Normal: 91.00t
+[metric] TML para Bronquite: 84.00t
+[metric] Tempo médio de laudo: 87.50
+
+[TEMPO 30t : event] Laudo de Exame do paciente de ID 1007 finalizado pelo radiologista [Duração do laudo: 30t]
+
+[metric] TML para Saúde Normal: 91.00t
+[metric] TML para Bronquite: 84.00t
+[metric] Tempo médio de laudo: 87.50
+
+[metric] TML para Saúde Normal: 91.00t
+[metric] Tempo médio de laudo: 91.00
+
+[metric] TML para Saúde Normal: 91.00t
+[metric] Tempo médio de laudo: 91.00
+
+[metric] TML para Saúde Normal: 91.00t
+[metric] Tempo médio de laudo: 91.00
+
+[metric] TML para Saúde Normal: 91.00t
+[metric] Tempo médio de laudo: 91.00
+
+[metric] TML para Saúde Normal: 91.00t
+[metric] Tempo médio de laudo: 91.00
+
+[metric] TML para Saúde Normal: 91.00t
+[metric] Tempo médio de laudo: 91.00
+
+[TEMPO 100t : event] Exame do paciente de ID 1012 realizado na máquina [Finalização do exame às 100t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 5]
+[TEMPO 29t : event] Laudo de Exame do paciente de ID 1008 finalizado pelo radiologista [Duração do laudo: 29t]
+
+[metric] TML para Saúde Normal: 91.00t
+[metric] TML para Apendicite: 100.00t
+[metric] Tempo médio de laudo: 95.50
+
+[TEMPO 101t : event] Entrada de novo paciente no hospital. [ID: 1013   Nome: Lucca    CPF: 754.910.166-25    Idade: 41]
+[metric] TML para Apendicite: 100.00t
+[metric] Tempo médio de laudo: 100.00
+
+[metric] TML para Apendicite: 100.00t
+[metric] Tempo médio de laudo: 100.00
+
+[metric] TML para Apendicite: 100.00t
+[metric] Tempo médio de laudo: 100.00
+
+[TEMPO 28t : event] Laudo de Exame do paciente de ID 1009 finalizado pelo radiologista [Duração do laudo: 28t]
+
+[metric] TML para Apendicite: 100.00t
+[metric] Tempo médio de laudo: 100.00
+
+
+
+
+
+
+[TEMPO 110t : event] Exame do paciente de ID 1013 realizado na máquina [Finalização do exame às 110t    Condição: Fratura de Fêmur    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Fratura de Fêmur: 110.00t
+[metric] Tempo médio de laudo: 110.00
+
+[metric] TML para Fratura de Fêmur: 110.00t
+[metric] Tempo médio de laudo: 110.00
+
+[TEMPO 112t : event] Entrada de novo paciente no hospital. [ID: 1014   Nome: Samuel    CPF: 641.251.417-92    Idade: 64]
+[metric] TML para Fratura de Fêmur: 110.00t
+[metric] Tempo médio de laudo: 110.00
+
+[metric] TML para Fratura de Fêmur: 110.00t
+[metric] Tempo médio de laudo: 110.00
+
+[TEMPO 114t : event] Entrada de novo paciente no hospital. [ID: 1015   Nome: Amanda    CPF: 813.905.100-51    Idade: 46]
+[metric] TML para Fratura de Fêmur: 110.00t
+[metric] Tempo médio de laudo: 110.00
+
+[metric] TML para Fratura de Fêmur: 110.00t
+[metric] Tempo médio de laudo: 110.00
+
+[metric] TML para Fratura de Fêmur: 110.00t
+[metric] Tempo médio de laudo: 110.00
+
+[metric] TML para Fratura de Fêmur: 110.00t
+[metric] Tempo médio de laudo: 110.00
+
+[TEMPO 118t : event] Entrada de novo paciente no hospital. [ID: 1016   Nome: Luiz Fernando    CPF: 661.433.976-25    Idade: 52]
+[TEMPO 24t : event] Laudo de Exame do paciente de ID 1010 finalizado pelo radiologista [Duração do laudo: 24t]
+
+[TEMPO 17t : event] Laudo de Exame do paciente de ID 1011 finalizado pelo radiologista [Duração do laudo: 17t]
+
+[metric] TML para Fratura de Fêmur: 110.00t
+[metric] Tempo médio de laudo: 110.00
+
+[TEMPO 119t : event] Exame do paciente de ID 1014 realizado na máquina [Finalização do exame às 119t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Pneumonia: 119.00t
+[metric] Tempo médio de laudo: 119.00
+
+
+
+
+[TEMPO 123t : event] Exame do paciente de ID 1015 realizado na máquina [Finalização do exame às 123t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Bronquite: 123.00t
+[metric] Tempo médio de laudo: 123.00
+
+[TEMPO 124t : event] Entrada de novo paciente no hospital. [ID: 1017   Nome: Marcos Vinicius    CPF: 256.518.097-84    Idade: 77]
+[TEMPO 124t : event] Exame do paciente de ID 1016 realizado na máquina [Finalização do exame às 124t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Bronquite: 123.50t
+[metric] Tempo médio de laudo: 123.50
+
+[metric] TML para Bronquite: 123.50t
+[metric] Tempo médio de laudo: 123.50
+
+[metric] TML para Bronquite: 123.50t
+[metric] Tempo médio de laudo: 123.50
+
+[metric] TML para Bronquite: 123.50t
+[metric] Tempo médio de laudo: 123.50
+
+[TEMPO 23t : event] Laudo de Exame do paciente de ID 1012 finalizado pelo radiologista [Duração do laudo: 23t]
+
+[metric] TML para Bronquite: 123.50t
+[metric] Tempo médio de laudo: 123.50
+
+[TEMPO 129t : event] Exame do paciente de ID 1017 realizado na máquina [Finalização do exame às 129t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Bronquite: 124.00t
+[metric] TML para Pneumonia: 129.00t
+[metric] Tempo médio de laudo: 126.50
+
+[metric] TML para Bronquite: 124.00t
+[metric] TML para Pneumonia: 129.00t
+[metric] Tempo médio de laudo: 126.50
+
+[metric] TML para Bronquite: 124.00t
+[metric] TML para Pneumonia: 129.00t
+[metric] Tempo médio de laudo: 126.50
+
+[metric] TML para Bronquite: 124.00t
+[metric] TML para Pneumonia: 129.00t
+[metric] Tempo médio de laudo: 126.50
+
+[TEMPO 133t : event] Entrada de novo paciente no hospital. [ID: 1018   Nome: Renan    CPF: 944.936.710-35    Idade: 53]
+[metric] TML para Bronquite: 124.00t
+[metric] TML para Pneumonia: 129.00t
+[metric] Tempo médio de laudo: 126.50
+
+[TEMPO 134t : event] Entrada de novo paciente no hospital. [ID: 1019   Nome: Yasmin    CPF: 720.569.913-25    Idade: 59]
+[metric] TML para Bronquite: 124.00t
+[metric] TML para Pneumonia: 129.00t
+[metric] Tempo médio de laudo: 126.50
+
+[metric] TML para Bronquite: 124.00t
+[metric] TML para Pneumonia: 129.00t
+[metric] Tempo médio de laudo: 126.50
+
+[TEMPO 17t : event] Laudo de Exame do paciente de ID 1013 finalizado pelo radiologista [Duração do laudo: 17t]
+
+[metric] TML para Bronquite: 124.00t
+[metric] TML para Pneumonia: 129.00t
+[metric] Tempo médio de laudo: 126.50
+
+[metric] TML para Pneumonia: 129.00t
+[metric] Tempo médio de laudo: 129.00
+
+[metric] TML para Pneumonia: 129.00t
+[metric] Tempo médio de laudo: 129.00
+
+[TEMPO 139t : event] Entrada de novo paciente no hospital. [ID: 1020   Nome: Milena    CPF: 393.210.225-68    Idade: 47]
+[metric] TML para Pneumonia: 129.00t
+[metric] Tempo médio de laudo: 129.00
+
+[TEMPO 140t : event] Entrada de novo paciente no hospital. [ID: 1021   Nome: Luiz Henrique    CPF: 478.504.923-26    Idade: 77]
+[TEMPO 140t : event] Exame do paciente de ID 1018 realizado na máquina [Finalização do exame às 140t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 2]
+[metric] TML para Pneumonia: 129.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 134.50
+
+[TEMPO 141t : event] Exame do paciente de ID 1019 realizado na máquina [Finalização do exame às 141t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Saúde Normal: 141.00t
+[metric] TML para Pneumonia: 129.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 136.67
+
+[metric] TML para Saúde Normal: 141.00t
+[metric] TML para Pneumonia: 129.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 136.67
+
+[TEMPO 23t : event] Laudo de Exame do paciente de ID 1014 finalizado pelo radiologista [Duração do laudo: 23t]
+
+[metric] TML para Saúde Normal: 141.00t
+[metric] TML para Pneumonia: 129.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 136.67
+
+[TEMPO 144t : event] Exame do paciente de ID 1020 realizado na máquina [Finalização do exame às 144t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 141.67
+
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 141.67
+
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 141.67
+
+[TEMPO 147t : event] Entrada de novo paciente no hospital. [ID: 1022   Nome: Caroline    CPF: 307.059.364-23    Idade: 46]
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 141.67
+
+[TEMPO 148t : event] Exame do paciente de ID 1021 realizado na máquina [Finalização do exame às 148t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 143.25
+
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 143.25
+
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 143.25
+
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 143.25
+
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 143.25
+
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 143.25
+
+[TEMPO 154t : event] Exame do paciente de ID 1022 realizado na máquina [Finalização do exame às 154t    Condição: Fratura de Fêmur    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 145.40
+
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 145.40
+
+[TEMPO 12t : event] Laudo de Exame do paciente de ID 1017 finalizado pelo radiologista [Duração do laudo: 12t]
+
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] TML para Apendicite: 140.00t
+[metric] Tempo médio de laudo: 145.40
+
+[TEMPO 28t : event] Laudo de Exame do paciente de ID 1015 finalizado pelo radiologista [Duração do laudo: 28t]
+
+[metric] TML para Saúde Normal: 142.50t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 146.75
+
+[metric] TML para Saúde Normal: 144.00t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 148.67
+
+[metric] TML para Saúde Normal: 144.00t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 148.67
+
+[TEMPO 160t : event] Entrada de novo paciente no hospital. [ID: 1023   Nome: Rafael    CPF: 721.517.308-70    Idade: 51]
+[TEMPO 23t : event] Laudo de Exame do paciente de ID 1016 finalizado pelo radiologista [Duração do laudo: 23t]
+
+[metric] TML para Saúde Normal: 144.00t
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 148.67
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 151.00
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 151.00
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 151.00
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 151.00
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 151.00
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 151.00
+
+[TEMPO 167t : event] Entrada de novo paciente no hospital. [ID: 1024   Nome: Enrico    CPF: 662.094.935-61    Idade: 43]
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 151.00
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 151.00
+
+[TEMPO 169t : event] Exame do paciente de ID 1023 realizado na máquina [Finalização do exame às 169t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 157.00
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 157.00
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 157.00
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 157.00
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 157.00
+
+[metric] TML para Bronquite: 148.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 157.00
+
+[TEMPO 175t : event] Exame do paciente de ID 1024 realizado na máquina [Finalização do exame às 175t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Bronquite: 161.50t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 161.50
+
+[metric] TML para Bronquite: 161.50t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 161.50
+
+[TEMPO 177t : event] Entrada de novo paciente no hospital. [ID: 1025   Nome: João Vitor    CPF: 896.576.144-95    Idade: 78]
+[metric] TML para Bronquite: 161.50t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 161.50
+
+[metric] TML para Bronquite: 161.50t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 161.50
+
+[metric] TML para Bronquite: 161.50t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 161.50
+
+[TEMPO 19t : event] Laudo de Exame do paciente de ID 1020 finalizado pelo radiologista [Duração do laudo: 19t]
+
+[metric] TML para Bronquite: 161.50t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 161.50
+
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 166.00
+
+[TEMPO 25t : event] Laudo de Exame do paciente de ID 1018 finalizado pelo radiologista [Duração do laudo: 25t]
+
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] TML para Fratura de Fêmur: 154.00t
+[metric] Tempo médio de laudo: 166.00
+
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] Tempo médio de laudo: 172.00
+
+[TEMPO 184t : event] Entrada de novo paciente no hospital. [ID: 1026   Nome: Kaique    CPF: 520.307.013-79    Idade: 71]
+[TEMPO 184t : event] Exame do paciente de ID 1025 realizado na máquina [Finalização do exame às 184t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] Tempo médio de laudo: 176.00
+
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] Tempo médio de laudo: 176.00
+
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] Tempo médio de laudo: 176.00
+
+[TEMPO 187t : event] Entrada de novo paciente no hospital. [ID: 1027   Nome: Heloísa    CPF: 780.020.500-87    Idade: 79]
+[TEMPO 29t : event] Laudo de Exame do paciente de ID 1019 finalizado pelo radiologista [Duração do laudo: 29t]
+
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 169.00t
+[metric] Tempo médio de laudo: 176.00
+
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] Tempo médio de laudo: 179.50
+
+[TEMPO 189t : event] Entrada de novo paciente no hospital. [ID: 1028   Nome: João Gabriel    CPF: 121.405.338-23    Idade: 44]
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] Tempo médio de laudo: 179.50
+
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] Tempo médio de laudo: 179.50
+
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] Tempo médio de laudo: 179.50
+
+[TEMPO 192t : event] Entrada de novo paciente no hospital. [ID: 1029   Nome: Daniel    CPF: 877.603.563-94    Idade: 27]
+[TEMPO 192t : event] Exame do paciente de ID 1026 realizado na máquina [Finalização do exame às 192t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 2]
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 192.00t
+[metric] Tempo médio de laudo: 183.67
+
+[TEMPO 193t : event] Entrada de novo paciente no hospital. [ID: 1030   Nome: Nicole    CPF: 115.885.824-90    Idade: 44]
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 192.00t
+[metric] Tempo médio de laudo: 183.67
+
+[TEMPO 194t : event] Entrada de novo paciente no hospital. [ID: 1031   Nome: Melissa    CPF: 574.835.781-18    Idade: 23]
+[TEMPO 194t : event] Exame do paciente de ID 1027 realizado na máquina [Finalização do exame às 194t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 1]
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 193.00t
+[metric] Tempo médio de laudo: 186.25
+
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 193.00t
+[metric] Tempo médio de laudo: 186.25
+
+[TEMPO 13t : event] Laudo de Exame do paciente de ID 1022 finalizado pelo radiologista [Duração do laudo: 13t]
+
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Bronquite: 175.00t
+[metric] TML para Pneumonia: 193.00t
+[metric] Tempo médio de laudo: 186.25
+
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Pneumonia: 193.00t
+[metric] Tempo médio de laudo: 190.00
+
+[TEMPO 198t : event] Exame do paciente de ID 1028 realizado na máquina [Finalização do exame às 198t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 2]
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Pneumonia: 194.67t
+[metric] Tempo médio de laudo: 192.00
+
+[TEMPO 18t : event] Laudo de Exame do paciente de ID 1021 finalizado pelo radiologista [Duração do laudo: 18t]
+
+[metric] TML para Saúde Normal: 184.00t
+[metric] TML para Pneumonia: 194.67t
+[metric] Tempo médio de laudo: 192.00
+
+[metric] TML para Pneumonia: 194.67t
+[metric] Tempo médio de laudo: 194.67
+
+[TEMPO 201t : event] Exame do paciente de ID 1030 realizado na máquina [Finalização do exame às 201t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 3]
+[TEMPO 201t : event] Exame do paciente de ID 1029 realizado na máquina [Finalização do exame às 201t    Condição: Fratura de Fêmur    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.00t
+[metric] Tempo médio de laudo: 197.20
+
+[TEMPO 202t : event] Exame do paciente de ID 1031 realizado na máquina [Finalização do exame às 202t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 198.00
+
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 198.00
+
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 198.00
+
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 198.00
+
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 198.00
+
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 198.00
+
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 198.00
+
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 198.00
+
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 198.00
+
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 198.00
+
+[TEMPO 24t : event] Laudo de Exame do paciente de ID 1023 finalizado pelo radiologista [Duração do laudo: 24t]
+
+[metric] TML para Pneumonia: 194.67t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 198.00
+
+[metric] TML para Pneumonia: 196.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 199.20
+
+[metric] TML para Pneumonia: 196.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 199.20
+
+[metric] TML para Pneumonia: 196.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 199.20
+
+[TEMPO 216t : event] Entrada de novo paciente no hospital. [ID: 1032   Nome: Leonardo    CPF: 189.469.655-31    Idade: 47]
+[metric] TML para Pneumonia: 196.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 199.20
+
+[TEMPO 217t : event] Entrada de novo paciente no hospital. [ID: 1033   Nome: Letícia    CPF: 458.122.302-93    Idade: 50]
+[metric] TML para Pneumonia: 196.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 199.20
+
+[metric] TML para Pneumonia: 196.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 199.20
+
+[TEMPO 19t : event] Laudo de Exame do paciente de ID 1025 finalizado pelo radiologista [Duração do laudo: 19t]
+
+[metric] TML para Pneumonia: 196.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 199.20
+
+[metric] TML para Pneumonia: 198.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 200.50
+
+[TEMPO 221t : event] Entrada de novo paciente no hospital. [ID: 1034   Nome: Calebe    CPF: 679.844.049-78    Idade: 63]
+[metric] TML para Pneumonia: 198.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 200.50
+
+[metric] TML para Pneumonia: 198.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 200.50
+
+[TEMPO 26t : event] Laudo de Exame do paciente de ID 1024 finalizado pelo radiologista [Duração do laudo: 26t]
+
+[metric] TML para Pneumonia: 198.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 200.50
+
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 201.33
+
+[TEMPO 225t : event] Exame do paciente de ID 1032 realizado na máquina [Finalização do exame às 225t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 201.00t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 207.25
+
+[TEMPO 226t : event] Exame do paciente de ID 1033 realizado na máquina [Finalização do exame às 226t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+[TEMPO 226t : event] Exame do paciente de ID 1034 realizado na máquina [Finalização do exame às 226t    Condição: Fratura de Fêmur    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Bronquite: 226.00t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 213.50
+
+[TEMPO 227t : event] Entrada de novo paciente no hospital. [ID: 1035   Nome: Luana    CPF: 889.523.231-35    Idade: 22]
+[metric] TML para Bronquite: 226.00t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 213.50
+
+[metric] TML para Bronquite: 226.00t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 213.50
+
+[TEMPO 16t : event] Laudo de Exame do paciente de ID 1026 finalizado pelo radiologista [Duração do laudo: 16t]
+
+[metric] TML para Bronquite: 226.00t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 201.50t
+[metric] Tempo médio de laudo: 213.50
+
+[metric] TML para Bronquite: 226.00t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 216.00
+
+[metric] TML para Bronquite: 226.00t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 216.00
+
+[metric] TML para Bronquite: 226.00t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 216.00
+
+[TEMPO 233t : event] Exame do paciente de ID 1035 realizado na máquina [Finalização do exame às 233t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[TEMPO 249t : event] Entrada de novo paciente no hospital. [ID: 1036   Nome: Ana    CPF: 711.736.012-80    Idade: 65]
+[TEMPO 19t : event] Laudo de Exame do paciente de ID 1030 finalizado pelo radiologista [Duração do laudo: 19t]
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 213.50t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 218.83
+
+[TEMPO 30t : event] Laudo de Exame do paciente de ID 1027 finalizado pelo radiologista [Duração do laudo: 30t]
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 202.00t
+[metric] Tempo médio de laudo: 222.40
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] Tempo médio de laudo: 227.50
+
+[TEMPO 252t : event] Entrada de novo paciente no hospital. [ID: 1037   Nome: Bryan    CPF: 651.543.584-66    Idade: 48]
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] Tempo médio de laudo: 227.50
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] Tempo médio de laudo: 227.50
+
+[TEMPO 30t : event] Laudo de Exame do paciente de ID 1028 finalizado pelo radiologista [Duração do laudo: 30t]
+
+[metric] TML para Bronquite: 229.50t
+[metric] TML para Pneumonia: 225.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] Tempo médio de laudo: 227.50
+
+[TEMPO 255t : event] Exame do paciente de ID 1036 realizado na máquina [Finalização do exame às 255t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Bronquite: 238.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] Tempo médio de laudo: 235.00
+
+[metric] TML para Bronquite: 238.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] Tempo médio de laudo: 235.00
+
+[TEMPO 257t : event] Exame do paciente de ID 1037 realizado na máquina [Finalização do exame às 257t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Bronquite: 238.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 239.40
+
+[metric] TML para Bronquite: 238.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 239.40
+
+[metric] TML para Bronquite: 238.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 239.40
+
+[metric] TML para Bronquite: 238.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 239.40
+
+[TEMPO 10t : event] Laudo de Exame do paciente de ID 1031 finalizado pelo radiologista [Duração do laudo: 10t]
+
+[metric] TML para Bronquite: 238.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 239.40
+
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 242.75
+
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 242.75
+
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 242.75
+
+[TEMPO 265t : event] Entrada de novo paciente no hospital. [ID: 1038   Nome: Alice    CPF: 381.431.944-31    Idade: 80]
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 242.75
+
+[TEMPO 266t : event] Entrada de novo paciente no hospital. [ID: 1039   Nome: Fernanda    CPF: 910.103.860-72    Idade: 32]
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 242.75
+
+[TEMPO 267t : event] Entrada de novo paciente no hospital. [ID: 1040   Nome: Ana Sophia    CPF: 537.832.208-46    Idade: 56]
+[TEMPO 17t : event] Laudo de Exame do paciente de ID 1029 finalizado pelo radiologista [Duração do laudo: 17t]
+
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Fratura de Fêmur: 226.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 242.75
+
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 248.33
+
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 248.33
+
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 248.33
+
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 248.33
+
+[TEMPO 272t : event] Exame do paciente de ID 1040 realizado na máquina [Finalização do exame às 272t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 254.25
+
+[TEMPO 273t : event] Entrada de novo paciente no hospital. [ID: 1041   Nome: Nicolas    CPF: 101.505.137-82    Idade: 68]
+[TEMPO 273t : event] Exame do paciente de ID 1038 realizado na máquina [Finalização do exame às 273t    Condição: Fratura de Fêmur    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 258.00
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 244.00t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 258.00
+
+[TEMPO 275t : event] Exame do paciente de ID 1039 realizado na máquina [Finalização do exame às 275t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 254.33t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 260.83
+
+[TEMPO 276t : event] Entrada de novo paciente no hospital. [ID: 1042   Nome: Samuel    CPF: 815.343.707-66    Idade: 36]
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 254.33t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 260.83
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 254.33t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 260.83
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 254.33t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 260.83
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 254.33t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 260.83
+
+[TEMPO 280t : event] Exame do paciente de ID 1041 realizado na máquina [Finalização do exame às 280t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 260.75t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 263.57
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 260.75t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 263.57
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 260.75t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 263.57
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 260.75t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 257.00t
+[metric] Tempo médio de laudo: 263.57
+
+[TEMPO 284t : event] Exame do paciente de ID 1042 realizado na máquina [Finalização do exame às 284t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 5]
+[TEMPO 22t : event] Laudo de Exame do paciente de ID 1033 finalizado pelo radiologista [Duração do laudo: 22t]
+
+[TEMPO 29t : event] Laudo de Exame do paciente de ID 1032 finalizado pelo radiologista [Duração do laudo: 29t]
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 260.75t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 270.50t
+[metric] Tempo médio de laudo: 266.12
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 270.00t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 270.50t
+[metric] Tempo médio de laudo: 270.86
+
+[TEMPO 18t : event] Laudo de Exame do paciente de ID 1034 finalizado pelo radiologista [Duração do laudo: 18t]
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 270.50t
+[metric] Tempo médio de laudo: 273.50
+
+[TEMPO 287t : event] Entrada de novo paciente no hospital. [ID: 1043   Nome: Eduardo    CPF: 649.569.992-60    Idade: 59]
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 284.00t
+[metric] Tempo médio de laudo: 276.80
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 284.00t
+[metric] Tempo médio de laudo: 276.80
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 284.00t
+[metric] Tempo médio de laudo: 276.80
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 284.00t
+[metric] Tempo médio de laudo: 276.80
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 284.00t
+[metric] Tempo médio de laudo: 276.80
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 284.00t
+[metric] Tempo médio de laudo: 276.80
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 284.00t
+[metric] Tempo médio de laudo: 276.80
+
+[TEMPO 294t : event] Exame do paciente de ID 1043 realizado na máquina [Finalização do exame às 294t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 279.67
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 279.67
+
+[TEMPO 296t : event] Entrada de novo paciente no hospital. [ID: 1044   Nome: Marcos Vinicius    CPF: 557.937.455-62    Idade: 51]
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 279.67
+
+[TEMPO 297t : event] Entrada de novo paciente no hospital. [ID: 1045   Nome: Enzo Gabriel    CPF: 841.333.628-30    Idade: 63]
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 279.67
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 279.67
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 279.67
+
+[TEMPO 13t : event] Laudo de Exame do paciente de ID 1037 finalizado pelo radiologista [Duração do laudo: 13t]
+
+[metric] TML para Saúde Normal: 272.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 279.67
+
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 281.20
+
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 281.20
+
+[TEMPO 303t : event] Exame do paciente de ID 1044 realizado na máquina [Finalização do exame às 303t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 4]
+[TEMPO 303t : event] Exame do paciente de ID 1045 realizado na máquina [Finalização do exame às 303t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 287.43
+
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 287.43
+
+[TEMPO 305t : event] Entrada de novo paciente no hospital. [ID: 1046   Nome: Luiz Miguel    CPF: 805.687.241-62    Idade: 53]
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 287.43
+
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 287.43
+
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 287.43
+
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 287.43
+
+[TEMPO 309t : event] Entrada de novo paciente no hospital. [ID: 1047   Nome: Otávio    CPF: 350.403.662-75    Idade: 71]
+[TEMPO 24t : event] Laudo de Exame do paciente de ID 1035 finalizado pelo radiologista [Duração do laudo: 24t]
+
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Fratura de Fêmur: 273.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 287.43
+
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 289.83
+
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 289.83
+
+[TEMPO 312t : event] Exame do paciente de ID 1046 realizado na máquina [Finalização do exame às 312t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 4]
+[TEMPO 26t : event] Laudo de Exame do paciente de ID 1036 finalizado pelo radiologista [Duração do laudo: 26t]
+
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Bronquite: 277.50t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 293.00
+
+[TEMPO 313t : event] Entrada de novo paciente no hospital. [ID: 1048   Nome: Heloísa    CPF: 821.102.431-23    Idade: 58]
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Bronquite: 280.00t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 296.00
+
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Bronquite: 280.00t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 296.00
+
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Bronquite: 280.00t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 296.00
+
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Bronquite: 280.00t
+[metric] TML para Pneumonia: 303.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 296.00
+
+[TEMPO 317t : event] Exame do paciente de ID 1047 realizado na máquina [Finalização do exame às 317t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Bronquite: 280.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 299.00
+
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Bronquite: 280.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 299.00
+
+[TEMPO 319t : event] Entrada de novo paciente no hospital. [ID: 1049   Nome: Enrico    CPF: 781.009.041-49    Idade: 75]
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Bronquite: 280.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 299.00
+
+[TEMPO 320t : event] Entrada de novo paciente no hospital. [ID: 1050   Nome: Vicente    CPF: 133.413.757-55    Idade: 33]
+[TEMPO 320t : event] Exame do paciente de ID 1048 realizado na máquina [Finalização do exame às 320t    Condição: Fratura de Fêmur    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Bronquite: 280.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 301.62
+
+[TEMPO 20t : event] Laudo de Exame do paciente de ID 1040 finalizado pelo radiologista [Duração do laudo: 20t]
+
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Bronquite: 280.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 301.62
+
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 304.71
+
+[TEMPO 323t : event] Entrada de novo paciente no hospital. [ID: 1051   Nome: Benício    CPF: 803.644.993-17    Idade: 73]
+[metric] TML para Saúde Normal: 312.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 304.71
+
+[TEMPO 324t : event] Exame do paciente de ID 1049 realizado na máquina [Finalização do exame às 324t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Saúde Normal: 318.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 307.12
+
+[metric] TML para Saúde Normal: 318.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 307.12
+
+[metric] TML para Saúde Normal: 318.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 307.12
+
+[TEMPO 327t : event] Exame do paciente de ID 1050 realizado na máquina [Finalização do exame às 327t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 4]
+[TEMPO 17t : event] Laudo de Exame do paciente de ID 1038 finalizado pelo radiologista [Duração do laudo: 17t]
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 289.00t
+[metric] Tempo médio de laudo: 309.33
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 294.00t
+[metric] Tempo médio de laudo: 312.50
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 294.00t
+[metric] Tempo médio de laudo: 312.50
+
+[TEMPO 330t : event] Exame do paciente de ID 1051 realizado na máquina [Finalização do exame às 330t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 294.00t
+[metric] Tempo médio de laudo: 314.44
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 294.00t
+[metric] Tempo médio de laudo: 314.44
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 294.00t
+[metric] Tempo médio de laudo: 314.44
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 294.00t
+[metric] Tempo médio de laudo: 314.44
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 294.00t
+[metric] Tempo médio de laudo: 314.44
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 294.00t
+[metric] Tempo médio de laudo: 314.44
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 294.00t
+[metric] Tempo médio de laudo: 314.44
+
+[TEMPO 24t : event] Laudo de Exame do paciente de ID 1039 finalizado pelo radiologista [Duração do laudo: 24t]
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] TML para Apendicite: 294.00t
+[metric] Tempo médio de laudo: 314.44
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 317.00
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 317.00
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 317.00
+
+[TEMPO 13t : event] Laudo de Exame do paciente de ID 1042 finalizado pelo radiologista [Duração do laudo: 13t]
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 307.67t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 317.00
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 310.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 319.00
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 310.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 319.00
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 310.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 319.00
+
+[TEMPO 23t : event] Laudo de Exame do paciente de ID 1041 finalizado pelo radiologista [Duração do laudo: 23t]
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 310.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 319.00
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 321.67
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 321.67
+
+[TEMPO 348t : event] Entrada de novo paciente no hospital. [ID: 1052   Nome: Marcelo    CPF: 405.817.718-73    Idade: 38]
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 321.67
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 321.67
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 321.67
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 321.67
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 321.67
+
+[TEMPO 353t : event] Entrada de novo paciente no hospital. [ID: 1053   Nome: Diego    CPF: 971.142.174-19    Idade: 43]
+[TEMPO 11t : event] Laudo de Exame do paciente de ID 1044 finalizado pelo radiologista [Duração do laudo: 11t]
+
+[metric] TML para Saúde Normal: 321.00t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 321.67
+
+[metric] TML para Saúde Normal: 325.50t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 323.60
+
+[metric] TML para Saúde Normal: 325.50t
+[metric] TML para Bronquite: 330.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 323.60
+
+[TEMPO 356t : event] Exame do paciente de ID 1052 realizado na máquina [Finalização do exame às 356t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 325.50t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 329.00
+
+[metric] TML para Saúde Normal: 325.50t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 329.00
+
+[TEMPO 358t : event] Exame do paciente de ID 1053 realizado na máquina [Finalização do exame às 358t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 333.14
+
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 333.14
+
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 333.14
+
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 333.14
+
+[TEMPO 362t : event] Entrada de novo paciente no hospital. [ID: 1054   Nome: Nicole    CPF: 713.494.431-93    Idade: 63]
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 333.14
+
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 333.14
+
+[TEMPO 26t : event] Laudo de Exame do paciente de ID 1043 finalizado pelo radiologista [Duração do laudo: 26t]
+
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Pneumonia: 317.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 333.14
+
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 335.83
+
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 335.83
+
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 335.83
+
+[TEMPO 368t : event] Entrada de novo paciente no hospital. [ID: 1055   Nome: Diego    CPF: 320.910.360-15    Idade: 41]
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 335.83
+
+[TEMPO 369t : event] Entrada de novo paciente no hospital. [ID: 1056   Nome: Caio    CPF: 992.824.430-39    Idade: 71]
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 335.83
+
+[TEMPO 370t : event] Entrada de novo paciente no hospital. [ID: 1057   Nome: Samuel    CPF: 123.541.246-70    Idade: 80]
+[TEMPO 24t : event] Laudo de Exame do paciente de ID 1045 finalizado pelo radiologista [Duração do laudo: 24t]
+
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Fratura de Fêmur: 320.00t
+[metric] Tempo médio de laudo: 335.83
+
+[TEMPO 371t : event] Exame do paciente de ID 1054 realizado na máquina [Finalização do exame às 371t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 2]
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 344.33
+
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 344.33
+
+[TEMPO 19t : event] Laudo de Exame do paciente de ID 1046 finalizado pelo radiologista [Duração do laudo: 19t]
+
+[metric] TML para Saúde Normal: 336.33t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 344.33
+
+[metric] TML para Saúde Normal: 342.50t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 348.40
+
+[metric] TML para Saúde Normal: 342.50t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 348.40
+
+[TEMPO 376t : event] Entrada de novo paciente no hospital. [ID: 1058   Nome: Maria Cecília    CPF: 685.294.400-59    Idade: 26]
+[metric] TML para Saúde Normal: 342.50t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 348.40
+
+[TEMPO 377t : event] Entrada de novo paciente no hospital. [ID: 1059   Nome: Fernando    CPF: 481.571.441-46    Idade: 41]
+[TEMPO 377t : event] Exame do paciente de ID 1055 realizado na máquina [Finalização do exame às 377t    Condição: Fratura de Fêmur    Qtd. de Máquinas Disponíveis: 1]
+[metric] TML para Saúde Normal: 342.50t
+[metric] TML para Bronquite: 343.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 353.17
+
+[TEMPO 378t : event] Entrada de novo paciente no hospital. [ID: 1060   Nome: Noah    CPF: 170.149.255-38    Idade: 22]
+[TEMPO 378t : event] Exame do paciente de ID 1056 realizado na máquina [Finalização do exame às 378t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 1]
+[TEMPO 378t : event] Exame do paciente de ID 1057 realizado na máquina [Finalização do exame às 378t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 2]
+[metric] TML para Saúde Normal: 342.50t
+[metric] TML para Bronquite: 354.67t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 359.38
+
+[metric] TML para Saúde Normal: 342.50t
+[metric] TML para Bronquite: 354.67t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 359.38
+
+[metric] TML para Saúde Normal: 342.50t
+[metric] TML para Bronquite: 354.67t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 359.38
+
+[TEMPO 381t : event] Entrada de novo paciente no hospital. [ID: 1061   Nome: Maitê    CPF: 636.806.336-32    Idade: 56]
+[TEMPO 16t : event] Laudo de Exame do paciente de ID 1047 finalizado pelo radiologista [Duração do laudo: 16t]
+
+[metric] TML para Saúde Normal: 342.50t
+[metric] TML para Bronquite: 354.67t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 359.38
+
+[metric] TML para Saúde Normal: 358.00t
+[metric] TML para Bronquite: 354.67t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 364.00
+
+[TEMPO 383t : event] Entrada de novo paciente no hospital. [ID: 1062   Nome: Vitória    CPF: 187.595.699-41    Idade: 69]
+[TEMPO 383t : event] Exame do paciente de ID 1058 realizado na máquina [Finalização do exame às 383t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 1]
+[TEMPO 383t : event] Exame do paciente de ID 1060 realizado na máquina [Finalização do exame às 383t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 2]
+[TEMPO 383t : event] Exame do paciente de ID 1059 realizado na máquina [Finalização do exame às 383t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 369.70
+
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 369.70
+
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 369.70
+
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 369.70
+
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 371.00t
+[metric] Tempo médio de laudo: 369.70
+
+[TEMPO 388t : event] Entrada de novo paciente no hospital. [ID: 1063   Nome: Yasmin    CPF: 973.684.081-46    Idade: 45]
+[TEMPO 388t : event] Exame do paciente de ID 1061 realizado na máquina [Finalização do exame às 388t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 379.50t
+[metric] Tempo médio de laudo: 371.36
+
+[TEMPO 389t : event] Entrada de novo paciente no hospital. [ID: 1064   Nome: Laura    CPF: 664.209.396-98    Idade: 58]
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 379.50t
+[metric] Tempo médio de laudo: 371.36
+
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 379.50t
+[metric] Tempo médio de laudo: 371.36
+
+[TEMPO 391t : event] Exame do paciente de ID 1062 realizado na máquina [Finalização do exame às 391t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 373.00
+
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 373.00
+
+[TEMPO 393t : event] Entrada de novo paciente no hospital. [ID: 1065   Nome: André    CPF: 270.337.994-73    Idade: 80]
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 373.00
+
+[TEMPO 20t : event] Laudo de Exame do paciente de ID 1049 finalizado pelo radiologista [Duração do laudo: 20t]
+
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 361.75t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 373.00
+
+[metric] TML para Saúde Normal: 374.67t
+[metric] TML para Bronquite: 372.33t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 376.91
+
+[TEMPO 396t : event] Entrada de novo paciente no hospital. [ID: 1066   Nome: Manuela    CPF: 228.536.996-12    Idade: 27]
+[TEMPO 396t : event] Exame do paciente de ID 1063 realizado na máquina [Finalização do exame às 396t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 2]
+[TEMPO 396t : event] Exame do paciente de ID 1064 realizado na máquina [Finalização do exame às 396t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Saúde Normal: 383.20t
+[metric] TML para Bronquite: 372.33t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 379.85
+
+[metric] TML para Saúde Normal: 383.20t
+[metric] TML para Bronquite: 372.33t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 379.85
+
+[TEMPO 27t : event] Laudo de Exame do paciente de ID 1048 finalizado pelo radiologista [Duração do laudo: 27t]
+
+[TEMPO 16t : event] Laudo de Exame do paciente de ID 1050 finalizado pelo radiologista [Duração do laudo: 16t]
+
+[metric] TML para Saúde Normal: 383.20t
+[metric] TML para Bronquite: 372.33t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 379.85
+
+[TEMPO 399t : event] Exame do paciente de ID 1065 realizado na máquina [Finalização do exame às 399t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 385.83t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 383.15
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 385.25
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 385.25
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 378.00t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 385.25
+
+[TEMPO 403t : event] Exame do paciente de ID 1066 realizado na máquina [Finalização do exame às 403t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[TEMPO 409t : event] Entrada de novo paciente no hospital. [ID: 1067   Nome: Joana    CPF: 470.175.277-72    Idade: 26]
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[TEMPO 16t : event] Laudo de Exame do paciente de ID 1053 finalizado pelo radiologista [Duração do laudo: 16t]
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 383.33t
+[metric] Tempo médio de laudo: 386.62
+
+[TEMPO 417t : event] Exame do paciente de ID 1067 realizado na máquina [Finalização do exame às 417t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 390.15
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 390.15
+
+[TEMPO 419t : event] Entrada de novo paciente no hospital. [ID: 1068   Nome: Camila    CPF: 779.580.216-82    Idade: 78]
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 390.15
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 390.15
+
+[TEMPO 26t : event] Laudo de Exame do paciente de ID 1051 finalizado pelo radiologista [Duração do laudo: 26t]
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Fratura de Fêmur: 377.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 390.15
+
+[TEMPO 23t : event] Laudo de Exame do paciente de ID 1052 finalizado pelo radiologista [Duração do laudo: 23t]
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 390.50t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 391.25
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 392.45
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 392.45
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 392.45
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 392.45
+
+[TEMPO 427t : event] Entrada de novo paciente no hospital. [ID: 1069   Nome: Isadora    CPF: 568.870.236-16    Idade: 22]
+[TEMPO 10t : event] Laudo de Exame do paciente de ID 1054 finalizado pelo radiologista [Duração do laudo: 10t]
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 380.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 392.45
+
+[TEMPO 428t : event] Exame do paciente de ID 1068 realizado na máquina [Finalização do exame às 428t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 397.00
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 397.00
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 397.00
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 397.00
+
+[TEMPO 432t : event] Entrada de novo paciente no hospital. [ID: 1070   Nome: Julia    CPF: 491.489.436-19    Idade: 71]
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 397.00
+
+[TEMPO 10t : event] Laudo de Exame do paciente de ID 1056 finalizado pelo radiologista [Duração do laudo: 10t]
+
+[metric] TML para Saúde Normal: 391.40t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 397.00
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 398.67t
+[metric] Tempo médio de laudo: 398.40
+
+[TEMPO 435t : event] Exame do paciente de ID 1069 realizado na máquina [Finalização do exame às 435t    Condição: Apendicite    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 401.73
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 401.73
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 401.73
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 401.73
+
+[TEMPO 439t : event] Entrada de novo paciente no hospital. [ID: 1071   Nome: Gustavo Henrique    CPF: 798.157.897-47    Idade: 48]
+[TEMPO 439t : event] Exame do paciente de ID 1070 realizado na máquina [Finalização do exame às 439t    Condição: Fratura de Fêmur    Qtd. de Máquinas Disponíveis: 4]
+[TEMPO 17t : event] Laudo de Exame do paciente de ID 1055 finalizado pelo radiologista [Duração do laudo: 17t]
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 405.50t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 404.83
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 406.82
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 406.82
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 406.82
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 403.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 406.82
+
+[TEMPO 444t : event] Exame do paciente de ID 1071 realizado na máquina [Finalização do exame às 444t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 409.92
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 409.92
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 409.92
+
+[TEMPO 447t : event] Entrada de novo paciente no hospital. [ID: 1072   Nome: Diego    CPF: 825.010.058-17    Idade: 22]
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 409.92
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 409.92
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 409.92
+
+[TEMPO 10t : event] Laudo de Exame do paciente de ID 1060 finalizado pelo radiologista [Duração do laudo: 10t]
+
+[TEMPO 22t : event] Laudo de Exame do paciente de ID 1057 finalizado pelo radiologista [Duração do laudo: 22t]
+
+[metric] TML para Saúde Normal: 393.50t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 409.92
+
+[TEMPO 451t : event] Entrada de novo paciente no hospital. [ID: 1073   Nome: Emilly    CPF: 796.773.170-75    Idade: 80]
+[metric] TML para Saúde Normal: 397.00t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 407.75t
+[metric] Tempo médio de laudo: 412.36
+
+[TEMPO 452t : event] Exame do paciente de ID 1072 realizado na máquina [Finalização do exame às 452t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 414.33t
+[metric] Tempo médio de laudo: 418.18
+
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 414.33t
+[metric] Tempo médio de laudo: 418.18
+
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 414.33t
+[metric] Tempo médio de laudo: 418.18
+
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 414.33t
+[metric] Tempo médio de laudo: 418.18
+
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 414.33t
+[metric] Tempo médio de laudo: 418.18
+
+[TEMPO 457t : event] Entrada de novo paciente no hospital. [ID: 1074   Nome: Marcos Vinicius    CPF: 715.842.309-59    Idade: 24]
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 414.33t
+[metric] Tempo médio de laudo: 418.18
+
+[TEMPO 24t : event] Laudo de Exame do paciente de ID 1058 finalizado pelo radiologista [Duração do laudo: 24t]
+
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 414.33t
+[metric] Tempo médio de laudo: 418.18
+
+[TEMPO 459t : event] Entrada de novo paciente no hospital. [ID: 1075   Nome: Maria    CPF: 248.775.677-65    Idade: 25]
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 428.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 420.90
+
+[TEMPO 460t : event] Exame do paciente de ID 1073 realizado na máquina [Finalização do exame às 460t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 3]
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 424.45
+
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 424.45
+
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 424.45
+
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 423.50t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 424.45
+
+[TEMPO 464t : event] Exame do paciente de ID 1074 realizado na máquina [Finalização do exame às 464t    Condição: Pneumonia    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 427.75
+
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 427.75
+
+[metric] TML para Saúde Normal: 410.75t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 427.75
+
+[TEMPO 467t : event] Exame do paciente de ID 1075 realizado na máquina [Finalização do exame às 467t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Saúde Normal: 422.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 430.77
+
+[metric] TML para Saúde Normal: 422.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 430.77
+
+[TEMPO 469t : event] Entrada de novo paciente no hospital. [ID: 1076   Nome: Maria Vitória    CPF: 122.323.985-33    Idade: 42]
+[metric] TML para Saúde Normal: 422.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 430.77
+
+[metric] TML para Saúde Normal: 422.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 430.77
+
+[metric] TML para Saúde Normal: 422.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 430.77
+
+[metric] TML para Saúde Normal: 422.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 430.77
+
+[metric] TML para Saúde Normal: 422.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 430.77
+
+[metric] TML para Saúde Normal: 422.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 430.77
+
+[TEMPO 23t : event] Laudo de Exame do paciente de ID 1061 finalizado pelo radiologista [Duração do laudo: 23t]
+
+[metric] TML para Saúde Normal: 422.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 430.77
+
+[TEMPO 476t : event] Exame do paciente de ID 1076 realizado na máquina [Finalização do exame às 476t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Saúde Normal: 438.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 436.92
+
+[metric] TML para Saúde Normal: 438.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 436.92
+
+[metric] TML para Saúde Normal: 438.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 436.92
+
+[metric] TML para Saúde Normal: 438.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 436.92
+
+[TEMPO 480t : event] Entrada de novo paciente no hospital. [ID: 1077   Nome: Arthur    CPF: 167.573.433-14    Idade: 56]
+[metric] TML para Saúde Normal: 438.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 436.92
+
+[TEMPO 30t : event] Laudo de Exame do paciente de ID 1059 finalizado pelo radiologista [Duração do laudo: 30t]
+
+[metric] TML para Saúde Normal: 438.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 436.92
+
+[metric] TML para Saúde Normal: 448.50t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 440.33
+
+[TEMPO 483t : event] Entrada de novo paciente no hospital. [ID: 1078   Nome: Juan    CPF: 725.551.542-99    Idade: 71]
+[metric] TML para Saúde Normal: 448.50t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 440.33
+
+[TEMPO 25t : event] Laudo de Exame do paciente de ID 1062 finalizado pelo radiologista [Duração do laudo: 25t]
+
+[metric] TML para Saúde Normal: 448.50t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 440.33
+
+[metric] TML para Saúde Normal: 465.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 444.09
+
+[metric] TML para Saúde Normal: 465.00t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 444.09
+
+[TEMPO 487t : event] Exame do paciente de ID 1077 realizado na máquina [Finalização do exame às 487t    Condição: Saúde Normal    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 447.67
+
+[TEMPO 12t : event] Laudo de Exame do paciente de ID 1063 finalizado pelo radiologista [Duração do laudo: 12t]
+
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 444.00t
+[metric] TML para Pneumonia: 437.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 447.67
+
+[TEMPO 489t : event] Exame do paciente de ID 1078 realizado na máquina [Finalização do exame às 489t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 5]
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 459.00t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 454.83
+
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 459.00t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 454.83
+
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 459.00t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 454.83
+
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 459.00t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 454.83
+
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 459.00t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 454.83
+
+[TEMPO 494t : event] Entrada de novo paciente no hospital. [ID: 1079   Nome: Heloísa    CPF: 475.308.894-30    Idade: 63]
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 459.00t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 454.83
+
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 459.00t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 454.83
+
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 459.00t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 454.83
+
+[TEMPO 15t : event] Laudo de Exame do paciente de ID 1064 finalizado pelo radiologista [Duração do laudo: 15t]
+
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 459.00t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 426.00t
+[metric] Tempo médio de laudo: 454.83
+
+[TEMPO 498t : event] Entrada de novo paciente no hospital. [ID: 1080   Nome: Marcelo    CPF: 825.498.257-12    Idade: 21]
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 459.00t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 435.00t
+[metric] Tempo médio de laudo: 458.27
+
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 459.00t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 435.00t
+[metric] Tempo médio de laudo: 458.27
+
+[TEMPO 500t : event] Exame do paciente de ID 1079 realizado na máquina [Finalização do exame às 500t    Condição: Bronquite    Qtd. de Máquinas Disponíveis: 4]
+[metric] TML para Saúde Normal: 470.50t
+[metric] TML para Bronquite: 469.25t
+[metric] TML para Pneumonia: 454.00t
+[metric] TML para Fratura de Fêmur: 439.00t
+[metric] TML para Apendicite: 435.00t
+[metric] Tempo médio de laudo: 461.75
+

@@ -12,12 +12,12 @@ int main() {
   /* Variáveis usadas durante o código */
   int relatorio = 11; 
   int nextID = 1000;
-  int max_time = 43200;
+  int max_time = 500;
   char filename[10];
   patient *patient;
 
   /* Acesso ao arquivo */
-  printf("Digite o nome do arquivo: ");
+  printf("\nDigite o nome do arquivo: ");
   scanf("%s", filename);
 
   /* Inicializando variáveis (Alocando memória) */
@@ -54,13 +54,11 @@ int main() {
 
         /* Lista de pacientes */
         patient = newPatient(name, cpf, age, nextID);
+        msg_newPatient(log, time, patient);
         ListPatient_insert(list_patient, patient);
         
         /* Fila de pacientes */
         QueueEnqueue(exams, nextID);
-
-        msg_newPatient(log, time, patient);
-
         nextID++;
     }
 

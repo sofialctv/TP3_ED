@@ -103,7 +103,7 @@ struct LogEvent {
 };
 
 struct log {
-  LogEvent events[30000];
+  LogEvent events[100000];
   int count;
 };
 
@@ -637,7 +637,7 @@ int examsBeyondTimeLimit(QueueReport *report, int timeLimit) {
 
 // Função que imprime as métricas solicitadas
 void printMetrics(QueueReport *report) {
-    printf("Tempo médio de laudo: %.2f\n", averageReportTime(report));
+    printf("\nTempo médio de laudo (TML): %.2ft\n", averageReportTime(report));
 
     // Lista de patologias a serem consideradas
     const char *patologies[] = {"Saúde Normal", "Bronquite", "Pneumonia", "Fratura de Fêmur", "Apendicite"};
@@ -658,14 +658,14 @@ void printMetrics(QueueReport *report) {
     for (int i = 0; i < numPatologies; i++) {
         if (patologyWaitTimes[i].numberOfExams > 0) {
             float averageTime = (float)patologyWaitTimes[i].totalWaitTime / patologyWaitTimes[i].numberOfExams;
-            printf("Tempo médio de laudo para %s: %.2f\n", patologyWaitTimes[i].patology, averageTime);
+            printf("TML - %s: %.2f\n", patologyWaitTimes[i].patology, averageTime);
         }
     }
 
     int timeLimit = 7200;
     int examsBeyondLimit = examsBeyondTimeLimit(report, timeLimit);
 
-    printf("Quantidade de exames realizados após o limite de tempo estabelecido (%d | Tempo limite): %d\n", timeLimit, examsBeyondLimit);
+    printf("Qtd. de exames realizados após o limite de tempo estabelecido (Tempo limite = %dt): %d\n", timeLimit, examsBeyondLimit);
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -755,30 +755,26 @@ Log* create_log() {
 
 // Função para registrar eventos no log
 void log_event(Log *log, const char *message) {
-    if (log->count < 1000) {
-        strncpy(log->events[log->count].message, message, sizeof(log->events[log->count].message));
+    if (log->count < 10000) {
+        strncat(log->events[log->count].message, message, sizeof(log->events[log->count].message) - 1);
+
         log->events[log->count].timestamp = time(NULL);
         log->count++;
-    } else 
-    {
+    } else {
         printf("Erro: Log está cheio. Não é possível adicionar mais eventos.\n");
     }
 }
 
+
 // Função para salvar o log em um arquivo
 void save_log_to_file(const Log *log, const char *filename) {
     FILE *file = fopen(filename, "w");
-    if (file != NULL) 
-    {
-
-        for (int i = 0; i < log->count; i++) 
-        {
+    if (file != NULL) {
+        for (int i = 0; i < log->count; i++) {
             fprintf(file, "%s\n", log->events[i].message);
         }
         fclose(file);
-
-    } else 
-    {
+    } else {
         printf("Erro: Não foi possível abrir o arquivo %s para escrita.\n", filename);
     }
 }
@@ -787,29 +783,23 @@ void msg_newPatient(Log *log, int time, patient *p) {
     // Formata a mensagem usando snprintf
     char entry[255];  // ajuste o tamanho conforme necessário
 
-    snprintf(entry, sizeof(entry), "- TEMPO %dt | Entrada de novo paciente no hospital. [ID: %d   Nome: %s    CPF: %s    Idade: %d]\n",
-             time, p->id, p->name, p->cpf, p->age);
-
+    snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Entrada de novo paciente no hospital. [ID: %d   Nome: %s    CPF: %s    Idade: %d]", time, p->id, p->name, p->cpf, p->age);
+ 
     // Adiciona a mensagem ao log
     log_event(log, entry);
 }
 
-void msg_record(ExamRecord *r, Log *log, int num){
-
-  char entry[255];
-  snprintf(entry, sizeof(entry), "- Exame do paciente de ID %d realizado na máquina [Finalização do exame: %dt    Condição: %s    Qtd. de Máquinas Disponíves: %d]\n", 
-          r->id, r->finishTime, r->path->condition, num);
-  log_event(log,entry);
-
+void msg_record(ExamRecord *r, Log *log, int num) {
+    char entry[255];
+    snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Exame do paciente de ID %d realizado na máquina [Finalização do exame às %dt    Condição: %s    Qtd. de Máquinas Disponíveis: %d]", r->finishTime, r->id, r->finishTime, r->path->condition, num);
+    log_event(log, entry);
 }
 
 void msg_radio(Log *log, Radiologist *radio){
   
   char entry[255];
-  snprintf(entry, sizeof(entry), "- Laudo de Exame do paciente de ID %d finalizado pelo radiologista [Duração do laudo: %dt]\n", 
-          radio->patientID, radio->durationRad);
+  snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Laudo de Exame do paciente de ID %d finalizado pelo radiologista [Duração do laudo: %dt]\n", radio->durationRad, radio->patientID, radio->durationRad);
   log_event(log,entry);
-  
 }
 
 // Função que imprime as métricas solicitadas
@@ -836,7 +826,7 @@ void msg_Metrics(QueueReport *report, Log *log) {
     for (int i = 0; i < numPatologies; i++) {
         if (patologyWaitTimes[i].numberOfExams > 0) {
             float averageTime = (float)patologyWaitTimes[i].totalWaitTime / patologyWaitTimes[i].numberOfExams;
-            snprintf(entry, sizeof(entry), "Tempo médio de laudo para %s: %.2f\n", patologyWaitTimes[i].patology, averageTime);
+            snprintf(entry, sizeof(entry), "[metric] TML para %s: %.2ft", patologyWaitTimes[i].patology, averageTime);
             log_event(log, entry);  // Adicionado log_event para imprimir a métrica
         }
     }
@@ -848,14 +838,12 @@ void msg_Metrics(QueueReport *report, Log *log) {
     entry[0] = '\0';
 
     if ((storage = averageReportTime(report)) != 0) {
-        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "Tempo médio de laudo: %.2f\n", storage);
+        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "[metric] Tempo médio de laudo: %.2f\n", storage);
     }
 
     if (examsBeyondLimit != 0) {
-        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "Quantidade de exames realizados após o limite de tempo estabelecido (%d | Tempo limite): %d\n",
-                 timeLimit, examsBeyondLimit);
+        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "[metric] Qtd. de exames realizados após o limite de tempo estabelecido (Tempo limite = %dt): %d\n", timeLimit, examsBeyondLimit);
     }
 
-    log_event(log, entry);
+  log_event(log, entry);
 }
-
