@@ -348,6 +348,17 @@ int machine_check(ListMachines *machine, int time){
   return -1;
 }
 
+int machine_disponible(ListMachines * machine){
+  int count = 0;
+  if(!ListEmpty_Machines(machine)){
+      for(Machines *m = machine->first; m != NULL; m = m->next ){
+        if(m->examDuration == 0 || m->patientID == 0 || m->time == 0){
+          count++;
+        }
+      }
+    }
+  return count;
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*                                     FUNÇÕES RELATIVAS À FILA DE LAUDOS                                            */
@@ -386,7 +397,7 @@ void Exam_Record(QueueReport *report, ListMachines *m, int time, Log *log){
       report->rear->next = r;
       report->rear = r;
     }
-    msg_record(r, log);
+    msg_record(r, log, machine_disponible(m));
     check = machine_check(m, time);
   }
 }
@@ -733,7 +744,7 @@ void sleepMicroseconds(unsigned long microseconds) {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*                               # FUNÇÃO PARA LIMPAR MEMORIA & AUXILIARES #                                         */
+/*                                             # FUNÇÕES LOGGING #                                                   */
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Log* create_log() {
@@ -762,8 +773,7 @@ void save_log_to_file(const Log *log, const char *filename) {
 
         for (int i = 0; i < log->count; i++) 
         {
-            fprintf(file, "# TEMPO %ldt\n", log->events[i].timestamp);
-            fprintf(file, "- %s\n", log->events[i].message);
+            fprintf(file, "%s\n", log->events[i].message);
         }
         fclose(file);
 
@@ -776,18 +786,19 @@ void save_log_to_file(const Log *log, const char *filename) {
 void msg_newPatient(Log *log, int time, patient *p) {
     // Formata a mensagem usando snprintf
     char entry[255];  // ajuste o tamanho conforme necessário
-    snprintf(entry, sizeof(entry), "# TEMPO %dt\n- Entrada de novo paciente no hospital. [ID: %d   Nome: %s    CPF: %s    Idade: %d]\n",
+
+    snprintf(entry, sizeof(entry), "- TEMPO %dt | Entrada de novo paciente no hospital. [ID: %d   Nome: %s    CPF: %s    Idade: %d]\n",
              time, p->id, p->name, p->cpf, p->age);
 
     // Adiciona a mensagem ao log
     log_event(log, entry);
 }
 
-void msg_record(ExamRecord *r, Log *log){
+void msg_record(ExamRecord *r, Log *log, int num){
 
   char entry[255];
-  snprintf(entry, sizeof(entry), "- Exame do paciente de ID %d realizado na máquina N. [Finalização do exame: %dt    Condição: %s    Qtd. de Máquinas Disponíves: 5]\n", 
-          r->id, r->finishTime, r->path->condition);
+  snprintf(entry, sizeof(entry), "- Exame do paciente de ID %d realizado na máquina [Finalização do exame: %dt    Condição: %s    Qtd. de Máquinas Disponíves: %d]\n", 
+          r->id, r->finishTime, r->path->condition, num);
   log_event(log,entry);
 
 }
@@ -795,8 +806,56 @@ void msg_record(ExamRecord *r, Log *log){
 void msg_radio(Log *log, Radiologist *radio){
   
   char entry[255];
-  snprintf(entry, sizeof(entry), "- Laudo de Exame do paciente de ID %d finalizado pelo radiologista N. [Duração do laudo: %dt]\n", 
+  snprintf(entry, sizeof(entry), "- Laudo de Exame do paciente de ID %d finalizado pelo radiologista [Duração do laudo: %dt]\n", 
           radio->patientID, radio->durationRad);
   log_event(log,entry);
   
 }
+
+// Função que imprime as métricas solicitadas
+void msg_Metrics(QueueReport *report, Log *log) {
+    char entry[500];
+    float storage;
+
+    // Lista de patologias a serem consideradas
+    const char *patologies[] = {"Saúde Normal", "Bronquite", "Pneumonia", "Fratura de Fêmur", "Apendicite"};
+    int numPatologies = sizeof(patologies) / sizeof(patologies[0]);
+
+    // Inicializar a estrutura para armazenar informações sobre cada patologia
+    PatologyWaitTime patologyWaitTimes[numPatologies];
+    for (int i = 0; i < numPatologies; i++) {
+        strcpy(patologyWaitTimes[i].patology, patologies[i]);
+        patologyWaitTimes[i].totalWaitTime = 0;
+        patologyWaitTimes[i].numberOfExams = 0;
+    }
+
+    // Chamar função para calcular o tempo médio de laudo por patologia
+    averageReportTimePerPatology(report, patologyWaitTimes, numPatologies);
+
+    // Restante da função para imprimir as métricas por patologia
+    for (int i = 0; i < numPatologies; i++) {
+        if (patologyWaitTimes[i].numberOfExams > 0) {
+            float averageTime = (float)patologyWaitTimes[i].totalWaitTime / patologyWaitTimes[i].numberOfExams;
+            snprintf(entry, sizeof(entry), "Tempo médio de laudo para %s: %.2f\n", patologyWaitTimes[i].patology, averageTime);
+            log_event(log, entry);  // Adicionado log_event para imprimir a métrica
+        }
+    }
+
+    int timeLimit = 7200;
+    int examsBeyondLimit = examsBeyondTimeLimit(report, timeLimit);
+
+    // Limpar o buffer antes de adicionar novas mensagens
+    entry[0] = '\0';
+
+    if ((storage = averageReportTime(report)) != 0) {
+        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "Tempo médio de laudo: %.2f\n", storage);
+    }
+
+    if (examsBeyondLimit != 0) {
+        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "Quantidade de exames realizados após o limite de tempo estabelecido (%d | Tempo limite): %d\n",
+                 timeLimit, examsBeyondLimit);
+    }
+
+    log_event(log, entry);
+}
+

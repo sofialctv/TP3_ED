@@ -50,7 +50,7 @@ int main() {
       int age = 0;
       char cpf[20];
 
-      fscanf(arquivo, "%49s\n%15s\n%d\n", name, cpf, &age);
+      fscanf(arquivo, "%49[^\n]\n%15[^\n]\n%d\n", name, cpf, &age);
 
         /* Lista de pacientes */
         patient = newPatient(name, cpf, age, nextID);
@@ -59,7 +59,7 @@ int main() {
         /* Fila de pacientes */
         QueueEnqueue(exams, nextID);
 
-        msg_newPatient(log, time, newPatient);
+        msg_newPatient(log, time, patient);
 
         nextID++;
     }
@@ -76,7 +76,7 @@ int main() {
       printMetrics(report);
       sleepMicroseconds(300000);
     }
-      
+    msg_Metrics(report, log);
     relatorio = relatorio + 1;
   }
 

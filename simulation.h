@@ -69,6 +69,8 @@ void initializeMachines(int qtd, ListMachines *m);  /* Função para iniciar o f
 
 void insert_machines(ListMachines *m, QueueExams *patient, int time);
 
+int machine_disponible(ListMachines * machine);
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*                                                      # LAUDOS #                                                   */
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -146,6 +148,8 @@ void sleepMicroseconds(unsigned long microseconds);
 void save_log_to_file(const Log *log, const char *filename);
 void log_event(Log *log, const char *message);
 void msg_newPatient(Log *log, int time, patient *p);
-void msg_record(ExamRecord *r, Log *log);
+void msg_record(ExamRecord *r, Log *log, int num);
+void msg_radio(Log *log, Radiologist *radio);
+void msg_Metrics(QueueReport *report, Log *log);
 
 #endif
