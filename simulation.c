@@ -750,6 +750,8 @@ void sleepMicroseconds(unsigned long microseconds) {
 Log* create_log() {
     Log *l = (Log *)malloc(sizeof(Log));
     l->count = 0;
+    // Inicializa a primeira posição da string
+    l->events[0].message[0] = '\0';
     return l;
 }
 
@@ -771,7 +773,7 @@ void save_log_to_file(const Log *log, const char *filename) {
     FILE *file = fopen(filename, "w");
     if (file != NULL) {
         for (int i = 0; i < log->count; i++) {
-            fprintf(file, "%s\n", log->events[i].message);
+            fprintf(file, "%s", log->events[i].message);
         }
         fclose(file);
     } else {
@@ -783,7 +785,8 @@ void msg_newPatient(Log *log, int time, patient *p) {
     // Formata a mensagem usando snprintf
     char entry[255];  // ajuste o tamanho conforme necessário
 
-    snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Entrada de novo paciente no hospital. [ID: %d   Nome: %s    CPF: %s    Idade: %d]", time, p->id, p->name, p->cpf, p->age);
+    snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Entrada de novo paciente no hospital. [ID: %d   Nome: %s    CPF: %s    Idade: %d]\n", 
+            time, p->id, p->name, p->cpf, p->age);
  
     // Adiciona a mensagem ao log
     log_event(log, entry);
@@ -791,19 +794,20 @@ void msg_newPatient(Log *log, int time, patient *p) {
 
 void msg_record(ExamRecord *r, Log *log, int num) {
     char entry[255];
-    snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Exame do paciente de ID %d realizado na máquina [Finalização do exame às %dt    Condição: %s    Qtd. de Máquinas Disponíveis: %d]", r->finishTime, r->id, r->finishTime, r->path->condition, num);
+    snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Exame do paciente de ID %d realizado na máquina [Condição: %s    Qtd. de Máquinas Disponíveis: %d]\n",
+            r->finishTime, r->id, r->path->condition, num);
     log_event(log, entry);
 }
 
 void msg_radio(Log *log, Radiologist *radio){
   
   char entry[255];
-  snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Laudo de Exame do paciente de ID %d finalizado pelo radiologista [Duração do laudo: %dt]\n", radio->durationRad, radio->patientID, radio->durationRad);
+  snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Laudo de Exame do paciente de ID %d finalizado pelo radiologista [Duração do laudo: %dt]\n", (radio->durationRad + radio->time), radio->patientID, radio->durationRad);
   log_event(log,entry);
 }
 
 // Função que imprime as métricas solicitadas
-void msg_Metrics(QueueReport *report, Log *log) {
+void msg_Metrics(QueueReport *report, Log *log, int time) {
     char entry[500];
     float storage;
 
@@ -826,7 +830,7 @@ void msg_Metrics(QueueReport *report, Log *log) {
     for (int i = 0; i < numPatologies; i++) {
         if (patologyWaitTimes[i].numberOfExams > 0) {
             float averageTime = (float)patologyWaitTimes[i].totalWaitTime / patologyWaitTimes[i].numberOfExams;
-            snprintf(entry, sizeof(entry), "[metric] TML para %s: %.2ft", patologyWaitTimes[i].patology, averageTime);
+            snprintf(entry, sizeof(entry), "[TEMPO %dt : metric] TML para %s: %.2ft\n", time, patologyWaitTimes[i].patology, averageTime);
             log_event(log, entry);  // Adicionado log_event para imprimir a métrica
         }
     }
@@ -838,11 +842,12 @@ void msg_Metrics(QueueReport *report, Log *log) {
     entry[0] = '\0';
 
     if ((storage = averageReportTime(report)) != 0) {
-        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "[metric] Tempo médio de laudo: %.2f\n", storage);
+        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "[TEMPO %dt : metric] Tempo médio de laudo: %.2f\n", time, storage);
     }
 
     if (examsBeyondLimit != 0) {
-        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "[metric] Qtd. de exames realizados após o limite de tempo estabelecido (Tempo limite = %dt): %d\n", timeLimit, examsBeyondLimit);
+        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "[TEMPO %dt : metric] Qtd. de exames realizados após o limite de tempo estabelecido (Tempo limite = %dt): %d\n", 
+                time, timeLimit, examsBeyondLimit);
     }
 
   log_event(log, entry);

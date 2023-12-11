@@ -150,6 +150,6 @@ void log_event(Log *log, const char *message);
 void msg_newPatient(Log *log, int time, patient *p);
 void msg_record(ExamRecord *r, Log *log, int num);
 void msg_radio(Log *log, Radiologist *radio);
-void msg_Metrics(QueueReport *report, Log *log);
+void msg_Metrics(QueueReport *report, Log *log, int time);
 
 #endif

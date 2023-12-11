@@ -74,7 +74,7 @@ int main() {
       printMetrics(report);
       sleepMicroseconds(300000);
     }
-    msg_Metrics(report, log);
+    msg_Metrics(report, log, time);
     relatorio = relatorio + 1;
   }
 
