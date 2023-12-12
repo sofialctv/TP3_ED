@@ -10,7 +10,9 @@ Este repositório tem por objetivo armazenar os códigos elaborados no Trabalho 
 
 - [Objetivo do Trabalho](#objetivo-do-trabalho)
 - [Instalação e Execução](#instalação-e-execução)
+- [Organização do projeto](#organização-do-projeto)
 - [Funcionamento do programa](#funcionamento-do-programa)
+- [Logging](#logging)
 
 ## Objetivo do Trabalho
 O Trabalho 3 consiste na continuação do que já foi implementado na primeira parte do trabalho (TP2), que pode ser conferida [aqui](https://github.com/sofialctv/TP2_ED).
