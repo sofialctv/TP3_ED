@@ -12,12 +12,17 @@ int main() {
   /* Variáveis usadas durante o código */
   int relatorio = 11; 
   int nextID = 1000;
-  int max_time = 500;
+  int max_time = 43200;
+  float sec;
   char filename[10];
   patient *patient;
 
+  printf("\nDigite a velocidade de impressão das Atualizações de Métricas [segundos]: ");
+  scanf("%f", &sec);
+  int sec2 = sec * 1000000;
+
   /* Acesso ao arquivo */
-  printf("\nDigite o nome do arquivo: ");
+  printf("Digite o nome do arquivo: ");
   scanf("%s", filename);
 
   /* Inicializando variáveis (Alocando memória) */
@@ -71,10 +76,10 @@ int main() {
     remove_radio(Radio,time, log);
     
     if((relatorio % 10) == 0){
-      printMetrics(report);
-      sleepMicroseconds(300000);
+      printMetrics(report);           /* Print na saída a cada 10 (dez) unidades de tempo */
+      sleepMicroseconds(sec2);
     }
-    msg_Metrics(report, log, time);
+    msg_Metrics(report, log, time);  /* Print no logging a cada 1 (um) instante de tempo */
     relatorio = relatorio + 1;
   }
 
@@ -86,6 +91,7 @@ int main() {
   listradiologist_free(Radio);
   qexam_free(exams);
   qreport_free(report);
+  free(log);
 
   fclose(arquivo);
   return 0;

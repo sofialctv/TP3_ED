@@ -103,7 +103,7 @@ struct LogEvent {
 };
 
 struct log {
-  LogEvent events[100000];
+  LogEvent events[350000];
   int count;
 };
 
@@ -637,7 +637,7 @@ int examsBeyondTimeLimit(QueueReport *report, int timeLimit) {
 
 // Função que imprime as métricas solicitadas
 void printMetrics(QueueReport *report) {
-    printf("\nTempo médio de laudo (TML): %.2ft\n", averageReportTime(report));
+    printf("\n--- Atualização de Métricas ---\n[TML] - Tempo médio de laudo: %.2ft\n", averageReportTime(report));
 
     // Lista de patologias a serem consideradas
     const char *patologies[] = {"Saúde Normal", "Bronquite", "Pneumonia", "Fratura de Fêmur", "Apendicite"};
@@ -658,14 +658,14 @@ void printMetrics(QueueReport *report) {
     for (int i = 0; i < numPatologies; i++) {
         if (patologyWaitTimes[i].numberOfExams > 0) {
             float averageTime = (float)patologyWaitTimes[i].totalWaitTime / patologyWaitTimes[i].numberOfExams;
-            printf("TML - %s: %.2f\n", patologyWaitTimes[i].patology, averageTime);
+            printf("[TMP] - %s: %.2ft\n", patologyWaitTimes[i].patology, averageTime);
         }
     }
 
     int timeLimit = 7200;
     int examsBeyondLimit = examsBeyondTimeLimit(report, timeLimit);
 
-    printf("Qtd. de exames realizados após o limite de tempo estabelecido (Tempo limite = %dt): %d\n", timeLimit, examsBeyondLimit);
+    printf("[QEL] - Exames realizados após o limite (%dt): %d\n", timeLimit, examsBeyondLimit);
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -757,7 +757,7 @@ Log* create_log() {
 
 // Função para registrar eventos no log
 void log_event(Log *log, const char *message) {
-    if (log->count < 10000) {
+    if (log->count < 350000) {
         strncat(log->events[log->count].message, message, sizeof(log->events[log->count].message) - 1);
 
         log->events[log->count].timestamp = time(NULL);
@@ -794,7 +794,7 @@ void msg_newPatient(Log *log, int time, patient *p) {
 
 void msg_record(ExamRecord *r, Log *log, int num) {
     char entry[255];
-    snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Exame do paciente de ID %d realizado na máquina [Condição: %s    Qtd. de Máquinas Disponíveis: %d]\n",
+    snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Exame do paciente de ID %d realizado. [Condição: %s    Qtd. de Máquinas Disponíveis: %d]\n",
             r->finishTime, r->id, r->path->condition, num);
     log_event(log, entry);
 }
@@ -802,7 +802,7 @@ void msg_record(ExamRecord *r, Log *log, int num) {
 void msg_radio(Log *log, Radiologist *radio){
   
   char entry[255];
-  snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Laudo de Exame do paciente de ID %d finalizado pelo radiologista [Duração do laudo: %dt]\n", (radio->durationRad + radio->time), radio->patientID, radio->durationRad);
+  snprintf(entry, sizeof(entry), "[TEMPO %dt : event] Laudo de Exame do paciente de ID %d finalizado pelo radiologista. [Duração do laudo: %dt]\n", (radio->durationRad + radio->time), radio->patientID, radio->durationRad);
   log_event(log,entry);
 }
 
@@ -830,7 +830,7 @@ void msg_Metrics(QueueReport *report, Log *log, int time) {
     for (int i = 0; i < numPatologies; i++) {
         if (patologyWaitTimes[i].numberOfExams > 0) {
             float averageTime = (float)patologyWaitTimes[i].totalWaitTime / patologyWaitTimes[i].numberOfExams;
-            snprintf(entry, sizeof(entry), "[TEMPO %dt : metric] TML para %s: %.2ft\n", time, patologyWaitTimes[i].patology, averageTime);
+            snprintf(entry, sizeof(entry), "[TEMPO %dt : metric] (TMP) Tempo médio de laudo - %s: %.2ft\n", time, patologyWaitTimes[i].patology, averageTime);
             log_event(log, entry);  // Adicionado log_event para imprimir a métrica
         }
     }
@@ -842,11 +842,11 @@ void msg_Metrics(QueueReport *report, Log *log, int time) {
     entry[0] = '\0';
 
     if ((storage = averageReportTime(report)) != 0) {
-        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "[TEMPO %dt : metric] Tempo médio de laudo: %.2f\n", time, storage);
+        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "[TEMPO %dt : metric] (TML) Tempo médio de laudo: %.2ft\n", time, storage);
     }
 
     if (examsBeyondLimit != 0) {
-        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "[TEMPO %dt : metric] Qtd. de exames realizados após o limite de tempo estabelecido (Tempo limite = %dt): %d\n", 
+        snprintf(entry + strlen(entry), sizeof(entry) - strlen(entry), "[TEMPO %dt : metric] (QEL) Qtd. de exames realizados após o limite de tempo estabelecido (Tempo limite = %dt): %d\n", 
                 time, timeLimit, examsBeyondLimit);
     }
 
